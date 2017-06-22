@@ -1,7 +1,7 @@
 # DS-Algos-Python
 Coding solutions to various DS and alogs using Python. I will to give solutins to some of the common DS problems using Python.
 
-Anagram algorithm
+## Anagram algorithm ##
 	Algorithm will take two strings and check to see if they are anagrams. An anagram is when the two strings can be written using the exact same letters in other words rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once
 	
 	Some examples of anagram:
