@@ -42,9 +42,9 @@ def sum_arr_uniq_pairs(arr,k):
     
     
     # FOR TESTING
-    #return len(output)
+    return len(output)
     # Nice one-liner for printing output
-    return '\n'.join(map(str,list(output)))
+    #return '\n'.join(map(str,list(output)))
       
    
 #  Test
