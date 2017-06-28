@@ -9,11 +9,11 @@
 class Stack(object):
     def __init__(self):
         self.items=[]
-# Checi if list is empty
+# Check if list is empty
     def isEmpty(self):
         return self.items == []
 # Push an element in a stack 
-    def Push(self,item):
+    def push(self,item):
         self.items.append(item)
 # POP an element from top of the stack
     def pop(self):
@@ -24,4 +24,24 @@ class Stack(object):
 # Check size of a stack (how may elements are stored)
     def size(self):
         return len(self.items)
-    
+# Test
+# Create an object and try basic operation
+sObj = Stack()
+# Check if list is empty
+print (sObj.isEmpty())
+# Add an element 
+print (sObj.push(1))
+# Add another element
+print (sObj.push(2))
+# Peek into stack and check top element
+print (sObj.peek())
+# Check again if empty
+print (sObj.isEmpty())
+# Check size
+print (sObj.size())
+# show items 
+print (sObj.items)
+# Remove item (First-In-First-Out)
+print (sObj.pop())
+# Check again items 
+print (sObj.items)
