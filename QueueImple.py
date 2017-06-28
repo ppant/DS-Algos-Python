@@ -1,4 +1,4 @@
-# Stack implementation
+# Queue class implementation
 
 # Author: Pradeep K. Pant, ppant@cpan.org
 
@@ -30,9 +30,9 @@ qObj = Queue()
 # Check if list is empty
 print (qObj.isEmpty())
 # Add an element 
-print (qObj.enqueue(1))
+qObj.enqueue(1)
 # Add another element
-print (qObj.enqueue(2))
+qObj.enqueue(2)
 # Check again if empty
 print (qObj.isEmpty())
 # Check size

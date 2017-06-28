@@ -1,4 +1,4 @@
-# Stack implementation
+# Stack class implementation
 
 # Author: Pradeep K. Pant, ppant@cpan.org
 
@@ -30,9 +30,9 @@ sObj = Stack()
 # Check if list is empty
 print (sObj.isEmpty())
 # Add an element 
-print (sObj.push(1))
+sObj.push(1)
 # Add another element
-print (sObj.push(2))
+sObj.push(2)
 # Peek into stack and check top element
 print (sObj.peek())
 # Check again if empty
