@@ -70,16 +70,76 @@ print (check_parentheses_match('[](){([[[]]])'))
 ```
 
 # Queue with 2 stack implementation
-
-# implement a Queue using two Stacks
-This is a classic problem. We need to use the basic charactristics of stack (popping out elements in reverse order) will make a queue
+This is a classic problem. We need to use the basic charactristics of stack (popping out elements in reverse order) will make a queue.
+Example:
+```
+# Create a object of the class
+qObj = QueueWith2Stack()
+# Add an element 
+qObj.enqueue(1)
+# Add another element
+qObj.enqueue(2)
+# Add more element
+qObj.enqueue(4)
+# Add more element
+qObj.enqueue(8)
+# Remove item
+print (qObj.dequeue())
+# Remove item 
+print (qObj.dequeue())
+# Remove item
+print (qObj.dequeue())
+# Remove item 
+print (qObj.dequeue())
+```
 
 # Singly Linked List class implementation
 Implement basic skeleton for a Singly Linked List 
+Example:
+```
+# Added node
+a = LinkedListNode(1)
+b = LinkedListNode(2)
+c = LinkedListNode(3)        
+# Set the pointers
+a.nextnode = b
+b.nextnode = c
 
+print (a.value)
+print (b.value)
+print (c.value)
+
+# Print using class 
+print (a.nextnode.value)
+```
 # Doubly Linked List class implementation
 Implement basic skeleton for a Doubly Linked List 
+Example:
+```
+# Added node
+a = DoublyLinkedListNode(1)
+b = DoublyLinkedListNode(2)
+c = DoublyLinkedListNode(3)        
+# Set the pointers
+# setting b after a (a before b)
+b.prev_node = a
+a.next_node = b
+
+# Setting c after a
+b.next_node = c
+c.prev_node = b
+
+print (a.value)
+print (b.value)
+print (c.value)
+
+# Print using class 
+print (a.next_node.value)
+print (b.next_node.value)
+print (b.prev_node.value)
+print (c.prev_node.value)
+```
 
 ## Acknowledgments
 
-* Python for data structures algorithms and interviews course on [Udemy](https://www.udemy.com)
+Python for data structures algorithms and interviews course on [Udemy](https://www.udemy.com)
