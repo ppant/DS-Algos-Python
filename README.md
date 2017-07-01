@@ -30,6 +30,56 @@ Output:
 5 is the missing number
 ```
 
+## Stack class implementation
+Implement basic stack operations (LIFO)
+```
+push() - Push an element in a stack 
+pop()- POP an element from top of the stack
+peek() - Just peek into top element of the stack (don't perform any operation)
+```
+
+## Queue class implementation
+Implement basic Queue operations (FIFO)
+```
+enqueue - adding a element to the queue 
+dequeue - removing an element from the queue
+```
+
+## Deque (DECK) class implementation
+Implement basic operation in deque (Add and remove elements both at front and rear)
+``` 
+addFront() - Add an element at the front
+addRear() - Add an element at the rear
+removeFront() - Remove from front
+removeRear() - Remove from rear
+```
+
+# Balance parenthelss using stack/list
+Given a string of opening and closing parentheses, check whether it’s balanced. 
+We have 3 types of parentheses: 
+round brackets: ()
+square brackets: []
+curly brackets: {}. 
+Assume that the string doesn’t contain any other character than these, no spaces words or numbers. 
+As a reminder, balanced parentheses require every opening parenthesis to be closed in the reverse order opened. For example ‘([])’ is balanced but ‘([)]’ is not. 
+Algo will take string as inut string and will return boolean (TRUE/FALSE)
+Examples:
+```
+print (check_parentheses_match('([])'))
+print (check_parentheses_match('[](){([[[]]])'))
+```
+
+# Queue with 2 stack implementation
+
+# implement a Queue using two Stacks
+This is a classic problem. We need to use the basic charactristics of stack (popping out elements in reverse order) will make a queue
+
+# Singly Linked List class implementation
+Implement basic skeleton for a Singly Linked List 
+
+# Doubly Linked List class implementation
+Implement basic skeleton for a Doubly Linked List 
+
 ## Acknowledgments
 
 * Python for data structures algorithms and interviews course on [Udemy](https://www.udemy.com)
