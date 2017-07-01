@@ -139,6 +139,32 @@ print (b.next_node.value)
 print (b.prev_node.value)
 print (c.prev_node.value)
 ```
+#  Reverse a linked list implementation
+Aim is to write a function to reverse a Linked List in place. The function will take in 
+the head of the list as input and return the new head of the list.
+Example:
+```
+# Create a Linked List 
+a = LinkedListNode(1)
+b = LinkedListNode(2)
+c = LinkedListNode(3)
+d = LinkedListNode(4)
+
+a.nextnode = b
+b.nextnode = c
+c.nextnode = d
+
+print (a.nextnode.value)
+print (b.nextnode.value)
+print (c.nextnode.value)
+
+# Call the reverse()
+LinkedListNode().reverse(a)
+print (d.nextnode.value)
+print (c.nextnode.value)
+print (b.nextnode.value)
+```
+
 
 ## Acknowledgments
 
