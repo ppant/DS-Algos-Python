@@ -165,6 +165,31 @@ print (c.nextnode.value)
 print (b.nextnode.value)
 ```
 
+#  Linked list Nth to last node
+Aim is a function that takes a head node and an integer value n and then returns the nth to last node in the linked list. Example:
+```
+# Create a Linked List 
+a = LinkedListNode(1)
+b = LinkedListNode(2)
+c = LinkedListNode(3)
+d = LinkedListNode(4)
+e = LinkedListNode(5)
+
+a.nextnode = b
+b.nextnode = c
+c.nextnode = d
+d.nextnode = e
+
+print (a.nextnode.value)
+print (b.nextnode.value)
+print (c.nextnode.value)
+print (d.nextnode.value)
+
+# This would return the node d with a value of 4, because its the 2nd to last node.
+target_node = LinkedListNode().nth_to_last_node(2, a) 
+print (target_node.value)
+# Ans: d=4
+```
 
 ## Acknowledgments
 
