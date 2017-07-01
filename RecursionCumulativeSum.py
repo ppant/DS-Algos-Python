@@ -16,7 +16,8 @@ def recursion_cululative_sum(n):
             return 0
         #print (n)
         # Check for n + (n-1) ... cases
-        return n + recursion_cululative_sum(n-1) 
+        else:
+            return n + recursion_cululative_sum(n-1) 
 # Test
 print (recursion_cululative_sum(5))
-# Result = 5+4+3+2+1+0
+# Result = 15
