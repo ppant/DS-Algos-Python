@@ -13,8 +13,9 @@ Our anagram check algorithm with take two strings and will give a boolean TRUE/F
 ## Array Pair Sum ##	
 Given an integer array, output all the unique pairs that sum up to a specific value k.
 So the input:
-```	sum_arr_uniq_pairs([1,2,2,3,4,1,1,3,2,1,3,1,2,2,4,0],5)
-	would return 2 pairs:
+```python	
+sum_arr_uniq_pairs([1,2,2,3,4,1,1,3,2,1,3,1,2,2,4,0],5)
+would return 2 pairs:
 
  	(2,3)
  	(1,4)
@@ -23,7 +24,7 @@ So the input:
 ## Find a missing element in an array/list ##	
 Consider an array of non-negative integers. A second array is formed by shuffling the elements of the first array and deleting a random element. Given these two arrays, find which element is missing in the second array.
 Here is an example input, the first array is shuffled and the number 5 is removed to construct the second array.
-```
+```python
 Input:
 find_missing_ele([1,2,3,4,5,6,7],[3,7,2,1,4,6])
 Output:
@@ -32,7 +33,7 @@ Output:
 
 ## Stack class implementation
 Implement basic stack operations (LIFO)
-```
+```python
 push() - Push an element in a stack 
 pop()- POP an element from top of the stack
 peek() - Just peek into top element of the stack (don't perform any operation)
@@ -40,14 +41,14 @@ peek() - Just peek into top element of the stack (don't perform any operation)
 
 ## Queue class implementation
 Implement basic Queue operations (FIFO)
-```
+```python
 enqueue - adding a element to the queue 
 dequeue - removing an element from the queue
 ```
 
 ## Deque (DECK) class implementation
 Implement basic operation in deque (Add and remove elements both at front and rear)
-``` 
+```python
 addFront() - Add an element at the front
 addRear() - Add an element at the rear
 removeFront() - Remove from front
@@ -64,7 +65,7 @@ Assume that the string doesn’t contain any other character than these, no spac
 As a reminder, balanced parentheses require every opening parenthesis to be closed in the reverse order opened. For example ‘([])’ is balanced but ‘([)]’ is not. 
 Algo will take string as inut string and will return boolean (TRUE/FALSE)
 Examples:
-```
+```python
 print (check_parentheses_match('([])'))
 print (check_parentheses_match('[](){([[[]]])'))
 ```
@@ -72,7 +73,7 @@ print (check_parentheses_match('[](){([[[]]])'))
 # Queue with 2 stack implementation
 This is a classic problem. We need to use the basic charactristics of stack (popping out elements in reverse order) will make a queue.
 Example:
-```
+```python
 # Create a object of the class
 qObj = QueueWith2Stack()
 # Add an element 
@@ -96,7 +97,7 @@ print (qObj.dequeue())
 # Singly Linked List class implementation
 Implement basic skeleton for a Singly Linked List 
 Example:
-```
+```python
 # Added node
 a = LinkedListNode(1)
 b = LinkedListNode(2)
@@ -115,7 +116,7 @@ print (a.nextnode.value)
 # Doubly Linked List class implementation
 Implement basic skeleton for a Doubly Linked List 
 Example:
-```
+```python
 # Added node
 a = DoublyLinkedListNode(1)
 b = DoublyLinkedListNode(2)
@@ -143,7 +144,7 @@ print (c.prev_node.value)
 Aim is to write a function to reverse a Linked List in place. The function will take in 
 the head of the list as input and return the new head of the list.
 Example:
-```
+```python
 # Create a Linked List 
 a = LinkedListNode(1)
 b = LinkedListNode(2)
@@ -167,7 +168,7 @@ print (b.nextnode.value)
 
 #  Linked list Nth to last node
 Aim is a function that takes a head node and an integer value n and then returns the nth to last node in the linked list. Example:
-```
+```python
 # Create a Linked List 
 a = LinkedListNode(1)
 b = LinkedListNode(2)
