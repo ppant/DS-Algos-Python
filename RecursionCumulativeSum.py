@@ -10,13 +10,13 @@
 # n + (n-1) + (n-2) + .... + 0
 
 # Implement recusion sum routine
-def recursion_sum(n):
+def recursion_cululative_sum(n):
     # Checking edge case is really important
         if (n == 0):
             return 0
         #print (n)
         # Check for n + (n-1) ... cases
-        return n + recursion_sum(n-1) 
+        return n + recursion_cululative_sum(n-1) 
 # Test
-print (recursion_sum(5))
+print (recursion_cululative_sum(5))
 # Result = 5+4+3+2+1+0
