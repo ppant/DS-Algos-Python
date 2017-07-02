@@ -7,7 +7,9 @@
 # Implement recusion sum routine
 def recursion_sum_digits(n):
     # Checking edge case is really important
-    if len(str(n)) == 1:
+    str_n = str(n)
+    print (str_n)
+    if len(str_n) == 0:
         return n
     #print (n)
     # Recursion, use modulo operator to get RMD and then use divide to pass
@@ -17,5 +19,5 @@ def recursion_sum_digits(n):
         return n%10 + recursion_sum_digits(n/10)         
     
 # Test
-print (recursion_sum_digits(4321))
-# Result = 4+3+2+1 = 10
+print (recursion_sum_digits(12))
+# Result = 9+8+5+4 = 25
