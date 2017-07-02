@@ -18,20 +18,25 @@
 
 #  Implement a recursive function for calculating permutations
 def permute(str):
+    # Empty list as we have to return output as a list
     out = []
 
-    # Check for Edge/Base Case
+    # Check for Edge/Base Case in this case it should be when only one letter left
     if len(str) == 1:
         out = [str]
-
+    # Recursive case
     else:
-        # For every letter in string
-        for i, let in enumerate(str):
+        # For every letter in string.. this will pick current index and letter
+        for i, cur_letter in enumerate(str):
 
             # For every permutation resulting from Step 2 and 3 described above
+            # First index to ith one and i+1 till end
+            # so grab everything till that index and then index + 1 till the end
             for perm in permute(str[:i] + str[i + 1:]):
-                # Add it to output
-                out += [let + perm]
+                # Add it to output ( letter and its permutation)
+                print 'Current letter is: ',cur_letter
+                print 'Perm is: ',perm
+                out += [cur_letter + perm]
 
     return out
 # Test
@@ -39,4 +44,5 @@ print(permute('abc'))
 # ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
 
 # note: Python has very good library ltertools to do such operations worth to check
-
+# As we are using two for loop and there are n! permutations, so the it looks that algorithm will take
+# O(n*n!) time
