@@ -1,4 +1,7 @@
+# Build a tree and fetch nodes and insert using list of lists
+# Author: Pradeep K. Pant, ppant@cpan.org
 #from test import testEqual
+# Test code
 
 def buildTree(r):
     return [r, [], []]
@@ -30,6 +33,7 @@ def getLeftChild(root):
 
 def getRightChild(root):
     return root[2]
+# Test data
 ttree = buildTree('a')
 insertLeft(ttree,'b')
 insertRight(getLeftChild(ttree),'d')
