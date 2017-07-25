@@ -10,7 +10,6 @@
 
 # * Regardless of how the items are arranged in the initial list, n−1 passes will be 
 # made to sort a list of size n, so 1 pass n-1 comparisons, 2 pass n-2 comparions and n-1 is 1 comparions.
-# * Worst case: O(n2) n square, best case O(n), average case: O(n2) n square
 # * A bubble sort is often considered the most inefficient sorting method since it 
 # must exchange items before the final location is known. These “wasted” exchange 
 # operations are very costly. However, because the bubble sort makes passes through 
@@ -19,6 +18,7 @@
 # then we know that the list must be sorted. A bubble sort can be modified to stop early 
 # if it finds that the list has become sorted. This means that for lists that require just 
 # a few passes, a bubble sort may have an advantage in that it will recognize the sorted list and stop.
+# * Performance: Worst case: O(n2) n square, best case O(n), average case: O(n2) n square
 
 # Ref: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheBubbleSort.html
 
