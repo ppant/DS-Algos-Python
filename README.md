@@ -294,6 +294,158 @@ known_results = [0]*(target+1)
 print (coin_change_dynamic(target,coins,known_results))
 ```
 
+# Build a tree and fetch nodes and insert using list of lists
+
+```python
+ttree = buildTree('a')
+insertLeft(ttree,'b')
+insertRight(getLeftChild(ttree),'d')
+insertRight(ttree,'c')
+insertLeft(getRightChild(ttree),'e')
+insertRight(getRightChild(ttree),'f')
+#print(getLeftChild(ttree))
+print(getLeftChild(ttree))
+print(getRightChild(ttree))
+```
+
+# Binary Search Tree Implementation
+
+```python
+# list must already be sorted!
+arr = [1,2,3,4,5,6,7,8,9,10]
+print(binary_search(arr,4))
+# True
+#print(binary_search(arr,2.2))
+# False
+```
+
+# Binary Heap Implementation Recursive approach
+```python 
+
+# Creates a new, empty, binary heap.
+BinaryHeap()
+
+# Adds a new item to the heap.
+insert(k) 
+
+# Returns the item with the minimum key value, leaving item in the heap.
+findMin() 
+
+# Returns the item with the minimum key value, removing the item from the heap.
+delMin() 
+
+# Returns true if the heap is empty, false otherwise.
+isEmpty() 
+
+# Returns the number of items in the heap.
+size() 
+
+# Builds a new heap from a list of keys.
+buildHeap(list) 
+```
+
+# Binary Search Implementation Recursive approach
+```python
+# list must already be sorted!
+# list must already be sorted!
+arr = [1,2,3,4,5,6,7,8,9,10]
+rec_bin_search(arr,3)
+# True
+rec_bin_search(arr,15)
+# False
+```
+
+# Binary Search Tree Implementation
+```python
+mytree = BinarySearchTree()
+mytree[3]="red"
+mytree[4]="blue"
+mytree[6]="yellow"
+mytree[2]="at"
+
+print(mytree[6])
+print(mytree[2])
+```
+
+# Binary Search Tree Check - Validate BST Sol 1
+Given a binary tree, check whether it’s a binary search tree or not?
+```python
+inorder(tree)
+sort_check(tree_vals)
+```
+
+# Binary Search Tree Check - Validate BST Sol 2
+Given a binary tree, check whether it’s a binary search tree or not?
+```python
+root= Node(10, "Hello")
+root.left = Node(5, "Five")
+root.right= Node(30, "Thirty")
+
+print(verify(root)) # prints True, since this tree is valid
+
+root = Node(10, "Ten")
+root.right = Node(20, "Twenty")
+root.left = Node(5, "Five")
+root.left.right = Node(15, "Fifteen")
+
+print(verify(root)) # prints False, since 15 is to the left of 10
+
+sort_check(tree_vals)
+```
+
+# Trim a Binary Search Tree
+Given the root of a binary search tree and 2 numbers min and max, trim the 
+tree such that all the numbers in the new tree are between min and max (inclusive). The resulting tree should still be a valid binary search tree. so we should remove all the nodes whose value is not between min and max. 
+The complexity of this algorithm is O(N), where N is the number of nodes in the tree. Because we basically perform a post-order traversal of the tree, visiting each and every node one. This is optimal because we should visit every 
+node at least once. This is a very elegant question that demonstrates the effectiveness of recursion in trees. 
+
+# Nodes and References Implementation of a Tree
+Implementing the representation of a Tree as a class with nodes and references.
+```python
+r = BinaryTree('a')
+print(r.getRootVal())
+print(r.getLeftChild())
+r.insertLeft('b')
+print(r.getLeftChild())
+print(r.getLeftChild().getRootVal())
+r.insertRight('c')
+print(r.getRightChild())
+print(r.getRightChild().getRootVal())
+r.getRightChild().setRootVal('hello')
+print(r.getRightChild().getRootVal())
+
+#  Output
+#a
+#None
+#<__main__.BinaryTree object at 0x104779c10>
+#b
+#<__main__.BinaryTree object at 0x103b42c50>
+#c
+#hello
+```
+
+# Tree Level Order Print
+Given a binary tree of integers, print it in level order. The output will contain 
+space between the numbers in the same level, and new line between different levels. 
+For example, if the tree is: 
+#   1
+#  2  3
+# 4 5 6
+# though not needed but paths are 1->2->4, 1->3->5 and 1->3->6
+
+# The output should be: 
+# 
+#     1 
+#     2 3 
+#     4 5 6
+# The time complexity of this solution is O(N), which is the number of nodes in 
+# the tree, so it’s optimal. Because we should visit each node at least once. 
+# The space complexity depends on maximum size of the queue at any point, which is 
+# the most number of nodes at one level. The worst case occurs when the tree is a 
+# complete binary tree, which means each level is completely filled with maximum 
+# number of nodes possible. In this case, the most number of nodes appear at the 
+# last level, which is (N+1)/2 where N is the total number of nodes. So the space 
+# vcomplexity is also O(N). Which is also optimal while using a queue. 
 ## Acknowledgments
 
 * Python for data structures algorithms and interviews course on [Udemy](https://www.udemy.com)
