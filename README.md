@@ -192,6 +192,22 @@ print (target_node.value)
 # Ans: d=4
 ```
 
+# Computes the cumulative sum - Recursion 
+Write a recursive function which takes an integer and computes the cumulative 
+sum of 0 to that integer. For example, if n=4 , return 4+3+2+1+0, which is 10.
+Remember, always think of what the base case will look like. In this case, we have a base case of n =0 (Note, you could have also designed the cut off to be 1). In this case, we have: n + (n-1) + (n-2) + .... + 0.
+Example:
+```python
+print (recursion_cululative_sum(5))
+```
+
+# Sum of digits - Recursion
+Given an integer, create a function which returns the sum of all the individual 
+digits in that integer. For example: if n = 4321, return 4+3+2+1
+Example:
+```python
+print (recursion_sum_digits(12))
+```
 ## Acknowledgments
 
 * Python for data structures algorithms and interviews course on [Udemy](https://www.udemy.com)
