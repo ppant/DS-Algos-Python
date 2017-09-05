@@ -280,12 +280,12 @@ print (coin_change_recursion(8,[1,5]))
 # Implement coin change problem - Dynamic programming
 Given a target amount n and a list (array) of distinct coin values, what's the fewest coins needed to make the
 change amount.
+```python
 1+1+1+1+1+1+1+1+1+1
 5 + 1+1+1+1+1
 5+5
 10
 With 1 coin being the minimum amount.
-```python
 # Caching
 target = 74
 coins = [1,5,10,25]
@@ -428,6 +428,7 @@ print(r.getRightChild().getRootVal())
 Given a binary tree of integers, print it in level order. The output will contain 
 space between the numbers in the same level, and new line between different levels. 
 For example, if the tree is: 
+```python
 #   1
 #  2  3
 # 4 5 6
@@ -445,7 +446,9 @@ For example, if the tree is:
 # complete binary tree, which means each level is completely filled with maximum 
 # number of nodes possible. In this case, the most number of nodes appear at the 
 # last level, which is (N+1)/2 where N is the total number of nodes. So the space 
-# vcomplexity is also O(N). Which is also optimal while using a queue. 
+# vcomplexity is also O(N). Which is also optimal while using a queue.
+```
+ 
 ## Acknowledgments
 
 * Python for data structures algorithms and interviews course on [Udemy](https://www.udemy.com)
