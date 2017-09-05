@@ -27,6 +27,7 @@ def permute(str):
     # Recursive case
     else:
         # For every letter in string.. this will pick current index and letter
+        # slicing notation to be checked?
         for i, cur_letter in enumerate(str):
 
             # For every permutation resulting from Step 2 and 3 described above

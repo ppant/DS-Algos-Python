@@ -40,7 +40,8 @@ def sum_arr_uniq_pairs(arr,k):
             # Add a tuple with the corresponding pair
             output.add( (min(num,target),  max(num,target)) )
     
-    
+    print (output)
+
     # FOR TESTING
     return len(output)
     # Nice one-liner for printing output
@@ -49,4 +50,4 @@ def sum_arr_uniq_pairs(arr,k):
    
 #  Test
 result = sum_arr_uniq_pairs([1,2,2,3,4,1,1,3,2,1,3,1,2,2,4,0],5)
-print (result);
+print (result)

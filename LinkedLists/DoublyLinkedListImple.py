@@ -12,7 +12,7 @@ class DoublyLinkedListNode(object):
         self.next_node = None
 
 # Test
-# Adde node
+# Added node
 a = DoublyLinkedListNode(1)
 b = DoublyLinkedListNode(2)
 c = DoublyLinkedListNode(3)        

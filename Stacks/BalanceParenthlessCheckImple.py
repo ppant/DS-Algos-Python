@@ -1,4 +1,4 @@
-# Deque (DECK) class implementation
+# Balance parenthelss using stack/list
 
 # Author: Pradeep K. Pant, ppant@cpan.org
 

@@ -39,7 +39,7 @@ print (qObj.isEmpty())
 print (qObj.size())
 # show items 
 print (qObj.items)
-# Remove item (Last-In-First-Out)
+# Remove item (First-In-First-Out)
 print (qObj.dequeue())
-# Check again items i
+# Check again items 
 print (qObj.items)

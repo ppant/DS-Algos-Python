@@ -2,10 +2,11 @@
 
 # Author: Pradeep K. Pant, ppant@cpan.org
 
-# Implement basic operation in Queue
-# Stack follows FIFO sequence
-# enqueue: adding a element to the queue
-# dequeue: Removing an element from queue
+# Implement basic operation in in deque
+# addFront() - Add an element at the front
+# addRear() - Add an element at the rear
+# removeFront() - Remove from front
+# removeRear() - Remove from rear
 
 # Initialize queue class and set a empty list
 class Deque(object):
@@ -51,7 +52,7 @@ print (dqObj.size())
 print (dqObj.items)
 # Remove from front
 print (dqObj.removeFront())
-# Remove from front
+# Remove from rear
 print (dqObj.removeRear())
 # Check again items 
 print (dqObj.items)

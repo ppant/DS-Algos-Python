@@ -11,7 +11,7 @@ class LinkedListNode(object):
         self.nextnode = None
 
 # Test
-# Adde node
+# Added node
 a = LinkedListNode(1)
 b = LinkedListNode(2)
 c = LinkedListNode(3)        

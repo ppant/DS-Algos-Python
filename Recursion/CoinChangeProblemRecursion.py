@@ -29,13 +29,13 @@ def coin_change_recursion(target,coins):
 
     else:
 
-        # for every coin value that is <= than target
+        # for every coin value that is <= than target (Using list comprehension
         for i in [c for c in coins if c <= target]:
 
             # Recursive Call (add a count coin and subtract from the target)
             num_coins = 1 + coin_change_recursion(target - i, coins)
 
-            # Reset Minimum if we have a new minimum
+            # Reset Minimum if we have a new minimum (new num_coins less than min_coins)
             if num_coins < min_coins:
                 min_coins = num_coins
 
@@ -43,4 +43,8 @@ def coin_change_recursion(target,coins):
 
 # Test
 print (coin_change_recursion(8,[1,5]))
-# 2
+# 4
+# Note
+# The problem with this approach is that it is very inefficient! It can take many, 
+# many recursive calls to finish this problem and its also inaccurate for non 
+# standard coin values (coin values that are not 1,5,10, etc.)

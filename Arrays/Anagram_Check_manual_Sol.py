@@ -1,4 +1,4 @@
-# Anagram Check - Mnual solution using counting and hash tables 
+# Anagram Check - Manual solution using counting and hash tables 
 # Author: Pradeep K. Pant, ppant@cpan.org
 
 # if two strings have the same frequency of letters/element 
