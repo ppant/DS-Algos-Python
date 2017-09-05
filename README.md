@@ -451,6 +451,13 @@ For example, if the tree is:
  
 # Bubble Sort Implementation
 The bubble sort makes multiple passes through a list. It compares adjacent items and exchanges those that are out of order. Each pass through the list places the next largest value in its proper place. In essence, each item “bubbles” up to the location where it belongs.
+* Regardless of how the items are arranged in the initial list, n−1 passes will be made to sort a list of size n, so 1 pass n-1 comparisons, 2 pass n-2 comparions and n-1 is 1 comparions.
+* A bubble sort is often considered the most inefficient sorting method since it must exchange items before the final 
+  location is known. These “wasted” exchange operations are very costly. However, because the bubble sort makes passes through the entire unsorted portion of the list, it has the capability to do something most sorting algorithms cannot. In particular, if during a pass there are no exchanges, then we know that the list must be sorted. A bubble sort can be modified to stop early if it finds that the list has become sorted. This means that for lists that require just a few passes, a bubble sort may have an advantage in that it will recognize the sorted list and stop.
+* Performance:
+        - Worst case: O(n2) n-square
+        - Best case: O(n)
+        - Average case: O(n2) n-square
 ```python
 arr = [2,7,1,8,5,9,11,35,25]
 bubble_sort(arr)
@@ -464,13 +471,16 @@ print (arr)
 * It is used for sorting the files with large values and small keys this is due to the fact that selection is based 
   on keys and swaps are made only when required
 * The selection sort improves on the bubble sort by making only one exchange for every pass through the list. In order to do this, a selection sort looks for the largest value as it makes a pass and, after completing the pass, places it in the proper location. As with a bubble sort, after the first pass, the largest item is in the correct place. After the second pass, the next largest is in place. This process continues and requires n−1 passes to sort n items, since the final item must be in place after the (n−1) st pass
-	
-* Performance: 
-* worst case: O(n2) n square, best case O(n), average case: O(n2) n square, worst case space complexity: O(1)
+* Performance:
+        - Worst case: O(n2) n-square
+        - Best case: O(n)
+        - Average case: O(n2) n-square
+		- worst case space complexity: O(1)
 ```python
 arr = [2,7,1,8,5,9,11,35,25]
 selection_sort(arr)
 print (arr)
+
 [1, 2, 5, 7, 8, 11, 25, 35]
 ```
 
@@ -502,6 +512,7 @@ Merge sort is a recursive algorithm (example of divide and conquer) that continu
 arr = [11,2,5,4,7,6,8,1,23]
 merge_sort(arr)
 print (arr)
+
 [1, 2, 4, 5, 6, 7, 8, 11, 23]
 ```
 
@@ -521,6 +532,7 @@ The quick sort uses divide and conquer to gain the same advantages as the merge 
 arr = [2,7,1,8,5,9,11,35,25]
 quick_sort(arr)
 print (arr)
+
 [1, 2, 5, 7, 8, 11, 25, 35]
 ```
 
