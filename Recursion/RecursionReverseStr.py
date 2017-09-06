@@ -1,7 +1,7 @@
 # Reverse a string using recursion
 # Author: Pradeep K. Pant, ppant@cpan.org
 
-# Do not use iteration/slice instead us recursive calls
+# Do not use iteration/slice instead use recursive calls
 import sys
 sys.setrecursionlimit(1000)
 # Implement a recursive reverse function

@@ -43,7 +43,7 @@ def verify(node):
         return True
     else:
         return False
-
+# Test
 root= Node(10, "Hello")
 root.left = Node(5, "Five")
 root.right= Node(30, "Thirty")
