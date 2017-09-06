@@ -4,7 +4,8 @@
 # Ref: http://interactivepython.org/runestone/static/pythonds/Graphs/Implementation.html
 
 # * We'll use dictionaries to implement the adjacency list in Python which is the easiest way. 
-# * To implement the Graph ADT we'll create two classes, Graph, which holds the master list of vertices, and Vertex, which will represent each vertex in the graph.
+# * To implement the Graph ADT we'll create two classes, Graph, which holds the master list of 
+#   vertices, and Vertex, which will represent each vertex in the graph.
 # * Each Vertex uses a dictionary to keep track of the vertices to which it is connected, and the weight of each edge. This dictionary is called connectedTo. 
 
 # Vetex class
@@ -73,6 +74,15 @@ class Graph:
         return iter(self.vertList.values())
 
 # Test
+# Now using the Graph and Vertex classes just defined we'll create a 
+# graph. First we create six vertices numbered 0 through 5. Then we 
+# display the vertex dictionary. Notice that for each key 0 through 5 
+# we have created an instance of a Vertex. Next, we add the edges that connect 
+# the vertices together. Finally, a nested loop verifies that each edge in the 
+# graph is properly stored. 
+
+# create six vertices numbered 0 through 5. 
+# Then we display the vertex dictionary
 g = Graph()
 for i in range(6):
     g.addVertex(i)
@@ -84,7 +94,7 @@ print(g.vertList)
 # 3: <__main__.Vertex object at 0x00000193B2E2CB70>, 
 # 4: <__main__.Vertex object at 0x00000193B2E2CBA8>, 
 # 5: <__main__.Vertex object at 0x00000193B2E2CA20>}
-
+#add the edges that connect the vertices together
 g.addEdge(0,1,5)
 g.addEdge(0,5,2)
 g.addEdge(1,2,4)
@@ -94,7 +104,19 @@ g.addEdge(3,5,3)
 g.addEdge(4,0,1)
 g.addEdge(5,4,8)
 g.addEdge(5,2,1)
+# Nested loop verifies that each edge in the graph is properly stored. 
 for v in g:
    for w in v.getConnections():
        print("( %s , %s )" % (v.getId(), w.getId()))
+       
+# Result
+#( 0 , 5 )
+#( 0 , 1 )
+#( 1 , 2 )
+#( 2 , 3 )
+#( 3 , 5 )
+#( 3 , 4 )
+#( 4 , 0 )
+#( 5 , 2 )
+#( 5 , 4 )
  
