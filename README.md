@@ -579,8 +579,119 @@ g.addEdge(5,2,1)
 for v in g:
    for w in v.getConnections():
        print("( %s , %s )" % (v.getId(), w.getId()))
+```
 
+# Graph Implementation - Solving Word Ladder Problem using Breadth First Search (BFS)
 
+let’s consider the following puzzle called a word ladder. Transform the 
+word “FOOL” into the word “SAGE”. In a word ladder puzzle you must make 
+the change occur gradually by changing one letter at a time. At each step 
+you must transform one word into another word, you are not allowed to transform a word into a non-word. 
+The following sequence of words shows one possible solution to the problem posed above.
+* FOOL
+* POOL
+* POLL
+* POLE
+* PALE
+* SALE
+* SAGE
+
+This is impemented using dictionary
+
+```python
+
+# The Graph class, contains a dictionary that maps vertex names to vertex objects.
+# Graph() creates a new, empty graph.
+Graph()   
+
+buildGraph()
+
+#BFS begins at the starting vertex s and colors start gray to show that 
+#it is currently being explored. Two other values, the distance and the 
+#predecessor, are initialized to 0 and None respectively for the starting
+#vertex. Finally, start is placed on a Queue. The next step is to begin 
+#to systematically explore vertices at the front of the queue. We explore 
+#each new node at the front of the queue by iterating over its adjacency 
+#list. As each node on the adjacency list is examined its color is 
+#checked. If it is white, the vertex is unexplored, and four things happen:
+#	* The new, unexplored vertex nbr, is colored gray.
+#	* The predecessor of nbr is set to the current node currentVert
+#The distance to nbr is set to the distance to currentVert + 1
+#nbr is added to the end of a queue. Adding nbr to the end of the queue 
+#effectively schedules this node for further exploration, but not until all the 
+#other vertices on the adjacency list of currentVert have been explored.
+
+bfs()
+```
+# Graph Implementation - Solving Knight tour problem using Depth First Search (DFS)
+The knight’s tour puzzle is played on a chess board with a single chess 
+piece, the knight. The object of the puzzle is to find a sequence of 
+moves that allow the knight to visit every square on the board exactly 
+once. One such sequence is called a “tour.”     
+we will solve the problem using two main steps:
+Represent the legal moves of a knight on a chessboard as a graph.
+Use a graph algorithm to find a path of length rows×columns−1rows×columns−1 
+where every vertex on the graph is visited exactly once.
+	To represent the knight’s tour problem as a graph we will use the 
+following two ideas: Each square on the chessboard can be represented 
+as a node in the graph. Each legal move by the knight can be represented
+as an edge in the graph. 
+```python
+
+# The Graph class, contains a dictionary that maps vertex names to vertex objects.
+# Graph() creates a new, empty graph.
+Graph()
+
+# To represent the knight’s tour problem as a graph we will use the 
+# following two ideas: Each square on the chessboard can be represented 
+# as a node in the graph. Each legal move by the knight can be represented
+# as an edge in the graph. 
+
+knightGraph()
+
+# The genLegalMoves function takes the position of the knight on the 
+# board and generates each of the eight possible moves. The legalCoord 
+# helper function makes sure that a particular move that is generated is 
+# still on the board.
+genLegalMoves()
+
+# DFS implementation
+        
+# we will look at two algorithms that implement a depth first search. 
+# The first algorithm we will look at directly solves the knight’s tour 
+# problem by explicitly forbidding a node to be visited more than once. 
+# The second implementation is more general, but allows nodes to be visited 
+# more than once as the tree is constructed. The second version is used in 
+# subsequent sections to develop additional graph algorithms.
+
+# The depth first exploration of the graph is exactly what we need in 
+# order to find a path that has exactly 63 edges. We will see that when 
+# the depth first search algorithm finds a dead end (a place in the graph 
+# where there are no more moves possible) it backs up the tree to the next
+# deepest vertex that allows it to make a legal move.
+        
+# The knightTour function takes four parameters: n, the current depth in 
+# the search tree; path, a list of vertices visited up to this point; u, 
+# the vertex in the graph we wish to explore; and limit the number of nodes 
+# in the path. The knightTour function is recursive. When the knightTour 
+# function is called, it first checks the base case condition. If we have 
+# a path that contains 64 vertices, we return from knightTour with a status 
+# of True, indicating that we have found a successful tour. If the path is not 
+# long enough we continue to explore one level deeper by choosing a new vertex 
+# to explore and calling knightTour recursively for that vertex.
+
+# DFS also uses colors to keep track of which vertices in the graph have been visited. 
+# Unvisited vertices are colored white, and visited vertices are colored gray. 
+# If all neighbors of a particular vertex have been explored and we have not yet reached 
+# our goal length of 64 vertices, we have reached a dead end. When we reach a dead end we 
+# must backtrack. Backtracking happens when we return from knightTour with a status of False. 
+# In the breadth first search we used a queue to keep track of which vertex to visit next. 
+# Since depth first search is recursive, we are implicitly using a stack to help us with 
+# our backtracking. When we return from a call to knightTour with a status of False, in line 11, 
+# we remain inside the while loop and look at the next vertex in nbrList.
+
+knightTour()
+```
 ## Acknowledgments
 	
 * [Python for data structures algorithms and interviews course on Udemy](https://www.udemy.com)
