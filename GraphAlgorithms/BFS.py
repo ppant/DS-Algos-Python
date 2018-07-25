@@ -129,7 +129,8 @@ def buildGraph(wordFile):
 # 2. The predecessor of nbr is set to the current node currentVert
 #The distance to nbr is set to the distance to currentVert + 1
 #nbr is added to the end of a queue. Adding nbr to the end of the queue 
-# effectively schedules this node for further exploration, but not until all the other vertices on the adjacency list of currentVert have been explored.
+# effectively schedules this node for further exploration, but not until all the 
+# other vertices on the adjacency list of currentVert have been explored.
 
 def bfs(g,start):
   start.setDistance(0)

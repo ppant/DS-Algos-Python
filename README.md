@@ -692,8 +692,13 @@ genLegalMoves()
 
 knightTour()
 ```
-## Acknowledgments
+## Acknowledgments and reading links
 	
 * [Python for data structures algorithms and interviews course on Udemy](https://www.udemy.com)
 
 * [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
+
+* [Good discussion on algorithms analysis mainly Big O notation](
+https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation/487278#487278)
+(https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly)
+
