@@ -698,8 +698,9 @@ knightTour()
 
 * [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
 
-* [Good discussion on algorithms analysis mainly Big O notation](
-https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation/487278#487278)
-[Algorithms analysis discussion on SOF]
+* [Good discussion on algorithms analysis mainly Big O notation]
+(https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation/487278#487278)
+
+* [Algorithms analysis discussion on SOF]
 (https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly)
 
