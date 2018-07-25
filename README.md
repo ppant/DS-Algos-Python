@@ -701,6 +701,5 @@ knightTour()
 * [Good discussion on algorithms analysis mainly Big O notation]
 (https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation/487278#487278)
 
-* [Algorithms analysis discussion on SOF]
-(https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly)
+* [Algorithms analysis discussion on SOF](https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly)
 
