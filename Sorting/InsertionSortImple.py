@@ -1,11 +1,14 @@
 # Insertion Sort Implementation
-# Author: Pradeep K. Pant, ppant@cpan.org
+# Author: Pradeep K. Pant, ppant@cpan.org,  https://pradeeppant.com
+
 # Insertion sort always maintains a sorted sub list in the lower portion of the list
 # Each new item is then "inserted" back into the previous sublist such that the 
 # sorted sub list is one item larger
-# complexity O(n2) square
 
-# Ref: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheSelectionSort.html
+# Complexity O(n2) square
+
+# Reference material: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheSelectionSort.html
+
 def insertion_sort(arr):
     
     # For every index in array
