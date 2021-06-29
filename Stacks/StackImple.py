@@ -1,6 +1,6 @@
 # Stack class implementation
 
-# Author: Pradeep K. Pant, ppant@cpan.org
+# Author: Pradeep K. Pant, ppant@cpan.org,  https://pradeeppant.com
 
 # Implement basic operation in stack
 # Stack follows LIFO sequence
@@ -24,6 +24,7 @@ class Stack(object):
 # Check size of a stack (how may elements are stored)
     def size(self):
         return len(self.items)
+    
 # Test
 # Create an object and try basic operation
 sObj = Stack()
