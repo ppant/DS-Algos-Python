@@ -1,6 +1,6 @@
 # Balance parenthelss using stack/list
 
-# Author: Pradeep K. Pant, ppant@cpan.org
+# Author: Pradeep K. Pant, ppant@cpan.org, https://pradeeppant.com
 
 # Problem Statement
 # Given a string of opening and closing parentheses, check whether it’s balanced. 
@@ -12,8 +12,8 @@
 
 # Initialize queue class and set a empty list
 def check_parentheses_match(str):
-    # first check if thre are even no of parentheses. This is a basic check
-    # assuming that there is no space in inout str
+    # first check if there are even no of parentheses. This is a basic check
+    # assuming that there is no space in str
     if len(str)%2 != 0:
         return False
     # Set of possible opening brackets
