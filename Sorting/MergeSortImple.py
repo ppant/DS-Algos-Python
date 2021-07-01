@@ -1,5 +1,5 @@
 # Merge Sort Implementation
-# Author: Pradeep K. Pant, ppant@cpan.org
+# Author: Pradeep K. Pant,  https://pradeeppant.com
 
 #- Merge sort is a recursive algorithm (example of divide and conquer) that continually 
 #  splits a list in half.
@@ -16,17 +16,19 @@
 #        - Best case: O(nlog n)
 #        - Average case: O(nlog n)
 
-# Ref: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheSelectionSort.html
+# Reference material: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheSelectionSort.html
+
 def merge_sort(arr):
-    
+    # Check if arr is there? else already sorted
     if len(arr)>1:
+        # look for mid point
         mid = len(arr)//2
         lefthalf = arr[:mid]
         righthalf = arr[mid:]
-
+        # recursive routine to divide the list and invoke on both halves
         merge_sort(lefthalf)
         merge_sort(righthalf)
-
+        # Once the tow halves are sorted merging takes place
         i=0
         j=0
         k=0
