@@ -1,6 +1,6 @@
 # Stack class implementation
 
-# Author: Pradeep K. Pant, ppant@cpan.org,  https://pradeeppant.com
+# Author: Pradeep K. Pant, https://pradeeppant.com
 
 # Implement basic operation in stack
 # Stack follows LIFO sequence
