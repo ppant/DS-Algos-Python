@@ -1,6 +1,7 @@
 # Bubble Sort Implementation
 
-# Author: Pradeep K. Pant, ppant@cpan.org,  https://pradeeppant.com
+# Author: Pradeep K. Pant, https://pradeeppant.com
+
 # The bubble sort makes multiple passes through a list. It compares
 #  adjacent items and exchanges those that are out of order. 
 # Each pass through the list places the next largest value in its 
@@ -18,7 +19,10 @@
 # then we know that the list must be sorted. A bubble sort can be modified to stop early 
 # , if it finds that the list has already become sorted. This means that for lists that require just 
 # a few passes, a bubble sort may have an advantage in that it will recognize the sorted list and stop.
-# * Performance: Worst case: O(n2) n square, best case O(n), average case: O(n2) n square
+
+# * Performance: Worst case: O(n2) n square
+# * best case O(n) 
+# * average case: O(n2) n square
 
 # Reference material: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheBubbleSort.html
 

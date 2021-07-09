@@ -1,6 +1,6 @@
 # Selection Sort Implementation
 
-# Author: Pradeep K. Pant, ppant@cpan.org
+# Author: Pradeep K. Pant, ,  https://pradeeppant.com
 
 #	* Selection sort is a in-place algorithm 
 #	* It works well with small files
@@ -16,10 +16,14 @@
 #   passes to sort n items, since the final item must be in place 
 #   after the (n−1) st pass
 	
-# * Performance: 
-#	* 
-#		* worst case: O(n2) n square, best case O(n), average case: O(n2) n square, worst case space complexity: O(1)
-# Ref: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheSelectionSort.html
+# Performance: 
+#	 
+#		* worst case: O(n2) n square, best case O(n)
+#       * average case: O(n2) n square
+#       * worst case space complexity: O(1)
+
+# Reference material: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheSelectionSort.html
+
 def selection_sort(arr):
     
     # For every slot in array

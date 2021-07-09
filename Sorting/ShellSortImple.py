@@ -1,13 +1,18 @@
 # Shell Sort Implementation
-#- This is also called diminishing incremental sort
-#- The shell sort improves on insertion sort by breaking the original list into a 
+
+# Author: Pradeep K. Pant, ,  https://pradeeppant.com
+
+# This is also called diminishing incremental sort
+# The shell sort improves on insertion sort by breaking the original list into a 
 # number of smaller sublists
-#- The unique way these sun lists are chosen is the key to the shell sort
-#- Instead of breaking the list into sublists of contiguous items, the shell sort uses an 
+# The unique way these sun lists are chosen is the key to the shell sort
+# Instead of breaking the list into sublists of contiguous items, the shell sort uses an 
 # increment ”i” to create a sublist by choosing all items that are ”i” items apart.
-#- Shell sort is efficient for medium size lists
-#- Complexity somewhere between O(n) and O(n2) square
-# Ref: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheSelectionSort.html
+# Shell sort is efficient for medium size lists
+# Complexity somewhere between O(n) and O(n2) square
+
+# Reference material: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheSelectionSort.html
+
 def shell_sort(arr):
     sublistcount = len(arr)//2
     
@@ -16,9 +21,6 @@ def shell_sort(arr):
         for start in range(sublistcount):
             # Use a gap insertion
             gap_insertion_sort(arr,start,sublistcount)
-
-      
-
         sublistcount = sublistcount // 2
 
 def gap_insertion_sort(arr,start,gap):
@@ -34,6 +36,7 @@ def gap_insertion_sort(arr,start,gap):
         
         # Set current value
         arr[position]=currentvalue
+
 # Test 
 arr = [45,67,23,45,21,24,7,2,6,4,90]
 shell_sort(arr)
