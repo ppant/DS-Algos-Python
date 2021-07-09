@@ -1,6 +1,6 @@
 # Selection Sort Implementation
 
-# Author: Pradeep K. Pant, ,  https://pradeeppant.com
+# Author: Pradeep K. Pant, https://pradeeppant.com
 
 #	* Selection sort is a in-place algorithm 
 #	* It works well with small files
