@@ -1,6 +1,6 @@
 # Shell Sort Implementation
 
-# Author: Pradeep K. Pant, ,  https://pradeeppant.com
+# Author: Pradeep K. Pant, https://pradeeppant.com
 
 # This is also called diminishing incremental sort
 # The shell sort improves on insertion sort by breaking the original list into a 
