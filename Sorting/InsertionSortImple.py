@@ -1,6 +1,6 @@
 # Insertion Sort Implementation
 
-# Author: Pradeep K. Pant, ppant@cpan.org,  https://pradeeppant.com
+# Author: Pradeep K. Pant, https://pradeeppant.com
 
 # Insertion sort always maintains a sorted sub list in the lower portion of the list
 # Each new item is then "inserted" back into the previous sublist such that the 
