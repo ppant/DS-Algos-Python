@@ -1,6 +1,6 @@
 # Balance parenthelss using stack/list
 
-# Author: Pradeep K. Pant, ppant@cpan.org, https://pradeeppant.com
+# Author: Pradeep K. Pant, https://pradeeppant.com
 
 # Problem Statement
 # Given a string of opening and closing parentheses, check whether it’s balanced. 
