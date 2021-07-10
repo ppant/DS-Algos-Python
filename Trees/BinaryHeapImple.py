@@ -1,6 +1,6 @@
 # Binary Heap Implementation Recursive approach
 
-# Author: Pradeep K. Pant, ppant@cpan.org
+# Author: Pradeep K. Pant, https://pradeeppant.com
 
 # BinaryHeap() creates a new, empty, binary heap.
 # insert(k) adds a new item to the heap.
