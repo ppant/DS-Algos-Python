@@ -8,7 +8,7 @@
 # delMin() returns the item with the minimum key value, removing the item from the heap.
 # isEmpty() returns true if the heap is empty, false otherwise.
 # size() returns the number of items in the heap.
-# buildHeap(list) builds a new heap from a list of keys.
+# buildHeap(list) builds a new heap from a list of keys. 
 
 class BinHeap:
     def __init__(self):
