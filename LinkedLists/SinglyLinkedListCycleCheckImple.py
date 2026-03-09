@@ -26,11 +26,11 @@ class LinkedListNode(object):
         # loop through end of the list
         while pt2 != None and pt2.nextnode != None:
             pt1 = pt1.nextnode
-            pt2 = pt2.nextnode.nextnode;
+            pt2 = pt2.nextnode.nextnode
             # If pt2 meet pt1 then there is a cycle
             if pt2 == pt1:
                 return True
-            return False
+        return False
 # Test
 # Create a Linked List 
 a = LinkedListNode(1)
@@ -46,7 +46,12 @@ print (a.value)
 print (b.value)
 print (c.value)
 
-obj = LinkedListNode()
-obj.cycle_check(a)
+# Since cycle_check is a method but it doesn't use self and is defined inside class
+# it should be called on an instance or changed to static method.
+# In its current definition it behaves like a regular method but is missing 'self'.
+# Actually it is defined as def cycle_check(node): which means it takes one arg.
+# If called as LinkedListNode.cycle_check(a) it should work if it was just a function.
+
+print(a.cycle_check())
 
 
