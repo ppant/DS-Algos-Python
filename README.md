@@ -3,6 +3,8 @@
 This repository contains a collection of common programming problems and data structure implementations in Python.
 
 ## Table of Contents
+- [Prerequisites](#prerequisites)
+- [How to Use](#how-to-use)
 - [Arrays](#arrays)
 - [Linked Lists](#linked-lists)
 - [Stacks](#stacks)
@@ -14,6 +16,28 @@ This repository contains a collection of common programming problems and data st
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
 - [Acknowledgments](#acknowledgments)
+
+---
+
+## Prerequisites
+
+- **Python 3.x**: Ensure you have Python 3 installed on your system. You can check your version by running `python --version` or `python3 --version`.
+
+---
+
+## How to Use
+
+All scripts in this repository are standalone and can be executed directly using the Python interpreter.
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/repository-name.git
+    cd repository-name
+    ```
+2.  Run a specific script:
+    ```bash
+    python Arrays/Anagram_Check_Sorted_Sol.py
+    ```
 
 ---
 
@@ -144,6 +168,10 @@ Trim a BST so all nodes are within a given range `[min, max]`.
 ### Tree Representation (Nodes & References)
 Implementing a tree using classes and references.
 - **File**: `Trees/TreeRepresentationWithNodesReferences.py`
+
+### Tree Representation (List of Lists)
+Implementing a tree using a list of lists.
+- **File**: `Trees/buildTreeTest.py`
 
 ### Tree Level Order Print
 Print a binary tree in level order.
