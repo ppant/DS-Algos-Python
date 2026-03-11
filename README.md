@@ -1,210 +1,97 @@
 # Data Structures and Algorithms using Python
 
-This repository contains a collection of common programming problems and data structure implementations in Python.
+A comprehensive collection of fundamental data structures and algorithms implemented in Python 3. This repository serves as a reference for common programming problems and their solutions, covering everything from basic array manipulations to complex graph algorithms.
 
-## Table of Contents
-- [Arrays](#arrays)
-- [Linked Lists](#linked-lists)
-- [Stacks](#stacks)
-- [Queues](#queues)
-- [Deque](#deque)
-- [Recursion](#recursion)
-- [Trees](#trees)
-- [Sorting](#sorting)
-- [Graph Algorithms](#graph-algorithms)
-- [Error Handling](#error-handling)
-- [Acknowledgments](#acknowledgments)
+## 📁 Project Structure
 
----
+```text
+.
+├── Arrays/             # Array-based problems (Anagrams, Finding missing elements, etc.)
+├── deque/              # Double-ended queue implementation
+├── Error-debug/        # Examples of error handling and debugging in Python
+├── GraphAlgorithms/    # BFS, DFS, Word Ladder, Knight's Tour
+├── LinkedLists/        # Singly and Doubly Linked Lists, Reversal, Cycle detection
+├── Queues/             # Queue implementation and Queues using Stacks
+├── Recursion/          # Cumulative sum, Factorial, Fibonacci, Coin change, etc.
+├── Sorting/            # Bubble, Selection, Insertion, Merge, Quick, and Shell sorts
+├── Stacks/             # Stack implementation and Balanced Parentheses check
+└── Trees/              # Binary Trees, BSTs, Heaps, Tree Traversal, and Balancing
+```
 
-## Arrays
+## 🚀 Getting Started
 
-### Anagram Check
-Checks if two strings are anagrams of each other.
-- **Files**: `Arrays/Anagram_Check_Sorted_Sol.py`, `Arrays/Anagram_Check_manual_Sol.py`
+### Prerequisites
+- Python 3.x
 
-### Array Pair Sum
-Given an integer array, output all unique pairs that sum up to a specific value `k`.
-- **File**: `Arrays/ArrayPairSumSol.py`
+### Usage
+Each script is designed to be standalone. You can run any file directly using the Python interpreter:
 
-### Find Missing Element
-Find the missing element in a shuffled second array.
-- **Files**: `Arrays/ArrayFindTheMissingElement_XOR_sol.py`, `Arrays/ArrayFindTheMissingElement_brute_force_sol.py`, `Arrays/ArrayFindTheMissingElement_hash_table_sol.py`, `Arrays/ArrayFindTheMissingElement_takingSumandSubtract_sol.py`
+```bash
+python Arrays/ArrayPairSumSol.py
+```
 
----
-
-## Linked Lists
-
-### Singly Linked List Implementation
-Basic skeleton for a Singly Linked List.
-- **File**: `LinkedLists/SingleLinkedListImple.py`
-
-### Doubly Linked List Implementation
-Basic skeleton for a Doubly Linked List.
-- **File**: `LinkedLists/DoublyLinkedListImple.py`
-
-### Singly Linked List Cycle Check
-Check if a singly linked list contains a cycle using the "two runners" (slow and fast pointers) strategy.
-- **File**: `LinkedLists/SinglyLinkedListCycleCheckImple.py`
-
-### Reverse a Linked List
-Reverse a linked list in-place.
-- **File**: `LinkedLists/LinkedListReversal.py`
-
-### Nth to Last Node
-Find the nth to last node in a linked list.
-- **File**: `LinkedLists/LinkedListNthToLastNode.py`
+Most files include test cases or example usage at the bottom, so you can see the algorithm in action immediately upon execution.
 
 ---
 
-## Stacks
+## 📚 Contents
 
-### Stack Implementation
-Basic stack operations (LIFO): `push`, `pop`, `peek`, `isEmpty`, `size`.
-- **File**: `Stacks/StackImple.py`
+### [Arrays](./Arrays)
+- **Anagram Check**: Determine if two strings are anagrams.
+- **Array Pair Sum**: Find unique pairs that sum up to a value `k`.
+- **Find Missing Element**: Multiple solutions (XOR, Hash Table, Sum) to find a missing element in a shuffled array.
 
-### Balanced Parentheses Check
-Check if a string of opening and closing parentheses is balanced.
-- **File**: `Stacks/BalanceParenthlessCheckImple.py`
+### [Linked Lists](./LinkedLists)
+- **Singly & Doubly Linked Lists**: Basic implementations.
+- **Cycle Check**: Detect cycles using Floyd's Cycle-Finding Algorithm.
+- **Reversal**: In-place reversal of a linked list.
+- **Nth to Last Node**: Locate the Nth node from the end.
 
----
+### [Stacks](./Stacks)
+- **Stack Implementation**: Standard LIFO operations.
+- **Balanced Parentheses**: Algorithm to check for balanced brackets in an expression.
 
-## Queues
+### [Queues & Deques](./Queues)
+- **Queue Implementation**: Standard FIFO operations.
+- **Queue with Two Stacks**: Implementation of a queue using two stacks.
+- **Deque**: Double-ended queue implementation in [deque/](./deque).
 
-### Queue Implementation
-Basic queue operations (FIFO): `enqueue`, `dequeue`, `isEmpty`, `size`.
-- **File**: `Queues/QueueImple.py`
+### [Recursion](./Recursion)
+- **Fibonacci Sequence**: Iterative, Recursive, and Dynamic Programming (Memoization) approaches.
+- **Coin Change Problem**: Finding the minimum number of coins for change.
+- **Permutations**: Generating all permutations of a string.
+- **Cumulative Sum & Sum of Digits**: Basic recursive exercises.
 
-### Queue with Two Stacks
-Implement a queue using two stacks.
-- **File**: `Queues/QueueWith2StacksImple.py`
+### [Trees](./Trees)
+- **Binary Search Tree (BST)**: Implementation and validation.
+- **Binary Heap**: Implementation of a priority queue using a heap.
+- **Tree Traversal**: Level order print and other traversal methods.
+- **BST Trimming**: Removing nodes outside a specific range.
+- **Build Tree**: Example of building a tree using lists in `buildTreeTest.py`.
 
----
+### [Sorting](./Sorting)
+Implementations with complexity analysis:
+- **Bubble Sort**: $O(n^2)$
+- **Selection Sort**: $O(n^2)$
+- **Insertion Sort**: $O(n^2)$
+- **Merge Sort**: $O(n \log n)$
+- **Quick Sort**: $O(n \log n)$
+- **Shell Sort**: $O(n \log n)$ to $O(n^2)$
 
-## Deque
+### [Graph Algorithms](./GraphAlgorithms)
+- **Adjacency List**: Standard graph representation.
+- **BFS & DFS**: Breadth-First and Depth-First Search implementations.
+- **Word Ladder Problem**: Application of BFS.
+- **Knight's Tour**: Application of DFS.
 
-### Deque Implementation
-Double-ended queue operations: `addFront`, `addRear`, `removeFront`, `removeRear`, `isEmpty`, `size`.
-- **File**: `deque/DequeImple.py`
-
----
-
-## Recursion
-
-### Cumulative Sum
-Compute the cumulative sum from 0 to `n`.
-- **File**: `Recursion/RecursionCumulativeSum.py`
-
-### Sum of Digits
-Returns the sum of all individual digits in an integer.
-- **File**: `Recursion/RecursionSumOfDigits.py`
-
-### Word Split
-Determine if a string can be split into words found in a given list.
-- **File**: `Recursion/RecursionWordSplit.py`
-
-### Reverse a String
-Recursive implementation to reverse a string.
-- **File**: `Recursion/RecursionReverseStr.py`
-
-### String Permutations
-Output all possible permutations of a string.
-- **File**: `Recursion/RecursionStrPermutation.py`
-
-### Fibonacci Sequence
-Implementations using iteration, recursion, and dynamic programming (memoization).
-- **Files**: `Recursion/FibonacciSeqIterative.py`, `Recursion/FibonacciSeqRecursion.py`, `Recursion/FibonacciSeqDynamic.py`
-
-### Coin Change Problem
-Find the fewest coins needed to make a change amount.
-- **Files**: `Recursion/CoinChangeProblemRecursion.py`, `Recursion/CoinChangeProblemDynamic.py`
+### [Error Handling](./Error-debug)
+- **Exception Handling**: Demonstration of `try-except-else-finally` blocks.
 
 ---
 
-## Trees
-
-### Binary Search Tree Implementation
-- **File**: `Trees/BinarySearchTreesImple.py`
-
-### Binary Heap Implementation
-- **File**: `Trees/BinaryHeapImple.py`
-
-### Binary Search
-Recursive and iterative implementations.
-- **Files**: `Trees/BinarySearchImple.py`, `Trees/BinarySearchRecursiveImple.py`
-
-### Validate BST
-Check if a binary tree is a valid Binary Search Tree.
-- **Files**: `Trees/BinarySearchTreeCheckImpleSol1.py`, `Trees/BinarySearchTreeCheckImpleSol2.py`
-
-### Trim a BST
-Trim a BST so all nodes are within a given range `[min, max]`.
-- **File**: `Trees/TrimBinarySearchTreeImple.py`
-
-### Tree Representation (Nodes & References)
-Implementing a tree using classes and references.
-- **File**: `Trees/TreeRepresentationWithNodesReferences.py`
-
-### Tree Level Order Print
-Print a binary tree in level order.
-- **File**: `Trees/TreeLevelOrderPrintImple.py`
+## 🎓 Acknowledgments
+- Inspired by the Udemy course "Python for Data Structures, Algorithms, and Interviews".
+- "Problem Solving with Algorithms and Data Structures using Python" by Bradley N. Miller and David L. Ranum.
 
 ---
-
-## Sorting
-
-### Bubble Sort
-- **File**: `Sorting/BubbleSortImple.py`
-- **Complexity**: $O(n^2)$ worst and average case, $O(n)$ best case.
-
-### Selection Sort
-- **File**: `Sorting/SelectionSortImple.py`
-- **Complexity**: $O(n^2)$ for all cases.
-
-### Insertion Sort
-- **File**: `Sorting/InsertionSortImple.py`
-- **Complexity**: $O(n^2)$ worst and average case, $O(n)$ best case.
-
-### Merge Sort
-- **File**: `Sorting/MergeSortImple.py`
-- **Complexity**: $O(n \log n)$ for all cases.
-
-### Quick Sort
-- **File**: `Sorting/QuickSortImple.py`
-- **Complexity**: $O(n^2)$ worst case, $O(n \log n)$ average/best case.
-
-### Shell Sort
-- **File**: `Sorting/ShellSortImple.py`
-- **Complexity**: Between $O(n)$ and $O(n^2)$ depending on increment sequence.
-
----
-
-## Graph Algorithms
-
-### Adjacency List Implementation
-- **File**: `GraphAlgorithms/AdjacencyListGraphImple.py`
-
-### Breadth First Search (BFS) - Word Ladder Problem
-- **Files**: `GraphAlgorithms/BFS.py`, `GraphAlgorithms/WordLadderProblem.py`
-
-### Depth First Search (DFS) - Knight's Tour Problem
-- **Files**: `GraphAlgorithms/DFSImpleTheKnightsTourProblem.py`, `GraphAlgorithms/TheKnightsTourProblem.py`
-
-### General DFS
-A more general implementation of Depth First Search.
-- **File**: `GraphAlgorithms/DFSGeneral.py`
-
----
-
-## Error Handling
-
-### Basic Exception Handling
-Demonstrates `try-except-else-finally` blocks and user input validation.
-- **File**: `Error-debug/ErrorExceptions.py`
-
----
-
-## Acknowledgments
-- [Python for Data Structures, Algorithms, and Interviews on Udemy](https://www.udemy.com)
-- [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
-- [Big O Notation - Plain English Explanation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation/487278#487278)
+*Author: Pradeep K. Pant*
