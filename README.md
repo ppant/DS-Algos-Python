@@ -3,6 +3,8 @@
 This repository contains a collection of common programming problems and data structure implementations in Python.
 
 ## Table of Contents
+- [Project Structure](#project-structure)
+- [Usage](#usage)
 - [Arrays](#arrays)
 - [Linked Lists](#linked-lists)
 - [Stacks](#stacks)
@@ -14,6 +16,29 @@ This repository contains a collection of common programming problems and data st
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
 - [Acknowledgments](#acknowledgments)
+
+---
+
+## Project Structure
+The repository is organized into the following directories:
+- `Arrays/`: Array-based problems and algorithms.
+- `Error-debug/`: Examples of error handling and debugging in Python.
+- `GraphAlgorithms/`: Implementations of graph data structures and algorithms (BFS, DFS, etc.).
+- `LinkedLists/`: Singly and doubly linked list implementations and problems.
+- `Queues/`: Queue implementations, including a queue using two stacks.
+- `Recursion/`: Various problems solved using recursion.
+- `Sorting/`: Common sorting algorithms (Bubble, Selection, Insertion, Merge, Quick, Shell).
+- `Stacks/`: Stack implementation and related problems.
+- `Trees/`: Binary trees, BST, Binary Heaps, and related algorithms.
+- `deque/`: Double-ended queue implementation.
+
+---
+
+## Usage
+Most scripts in this repository are standalone and can be executed directly using Python 3. For example:
+```bash
+python3 LinkedLists/SinglyLinkedListCycleCheckImple.py
+```
 
 ---
 
@@ -144,6 +169,10 @@ Trim a BST so all nodes are within a given range `[min, max]`.
 ### Tree Representation (Nodes & References)
 Implementing a tree using classes and references.
 - **File**: `Trees/TreeRepresentationWithNodesReferences.py`
+
+### Tree Representation (List of Lists)
+Implementing a tree using a list of lists.
+- **File**: `Trees/buildTreeTest.py`
 
 ### Tree Level Order Print
 Print a binary tree in level order.
