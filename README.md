@@ -1,8 +1,10 @@
 # Data Structures and Algorithms using Python
 
-This repository contains a collection of common programming problems and data structure implementations in Python.
+This repository contains a collection of common programming problems and data structure implementations in Python 3. It serves as a resource for learning and practicing fundamental computer science concepts.
 
 ## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
 - [Arrays](#arrays)
 - [Linked Lists](#linked-lists)
 - [Stacks](#stacks)
@@ -14,6 +16,19 @@ This repository contains a collection of common programming problems and data st
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
 - [Acknowledgments](#acknowledgments)
+
+---
+
+## Prerequisites
+To run the scripts in this repository, you need:
+- **Python 3.x** installed on your system.
+
+## Usage
+Most scripts are standalone and can be executed directly. For example:
+```bash
+python3 Arrays/ArrayPairSumSol.py
+```
+Each script typically includes its own test cases or verification logic.
 
 ---
 
@@ -144,6 +159,10 @@ Trim a BST so all nodes are within a given range `[min, max]`.
 ### Tree Representation (Nodes & References)
 Implementing a tree using classes and references.
 - **File**: `Trees/TreeRepresentationWithNodesReferences.py`
+
+### List of Lists Representation
+Alternative tree representation using Python lists.
+- **File**: `Trees/buildTreeTest.py`
 
 ### Tree Level Order Print
 Print a binary tree in level order.
