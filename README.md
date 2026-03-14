@@ -3,6 +3,9 @@
 This repository contains a collection of common programming problems and data structure implementations in Python.
 
 ## Table of Contents
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
 - [Arrays](#arrays)
 - [Linked Lists](#linked-lists)
 - [Stacks](#stacks)
@@ -14,6 +17,54 @@ This repository contains a collection of common programming problems and data st
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
 - [Acknowledgments](#acknowledgments)
+- [License](#license)
+
+---
+
+## Project Structure
+
+```text
+.
+├── Arrays/             # Array-based problems and algorithms
+├── Error-debug/        # Examples of error handling and exceptions
+├── GraphAlgorithms/    # Graph implementations and algorithms (BFS, DFS, etc.)
+├── LinkedLists/        # Singly and Doubly Linked List implementations
+├── Queues/             # Queue implementations and problems
+├── Recursion/          # Recursive algorithm examples
+├── Sorting/            # Common sorting algorithm implementations
+├── Stacks/             # Stack implementations and problems
+├── Trees/              # Tree-based data structures and algorithms
+└── deque/              # Deque implementation
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.x
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/repository-name.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd repository-name
+   ```
+
+---
+
+## Usage
+
+Each script is designed to be run independently. For example, to run the Bubble Sort implementation:
+
+```bash
+python Sorting/BubbleSortImple.py
+```
+
+Most scripts include test cases at the end of the file to demonstrate their functionality.
 
 ---
 
@@ -149,6 +200,10 @@ Implementing a tree using classes and references.
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
 
+### Tree List of Lists Representation
+Build a tree and fetch nodes and insert using list of lists.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Sorting
@@ -208,3 +263,8 @@ Demonstrates `try-except-else-finally` blocks and user input validation.
 - [Python for Data Structures, Algorithms, and Interviews on Udemy](https://www.udemy.com)
 - [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
 - [Big O Notation - Plain English Explanation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation/487278#487278)
+
+---
+
+## License
+This project is licensed under the MIT License.
