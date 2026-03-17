@@ -13,6 +13,8 @@ This repository contains a collection of common programming problems and data st
 - [Sorting](#sorting)
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
+- [Usage](#usage)
+- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ---
@@ -145,6 +147,10 @@ Trim a BST so all nodes are within a given range `[min, max]`.
 Implementing a tree using classes and references.
 - **File**: `Trees/TreeRepresentationWithNodesReferences.py`
 
+### Tree Representation (List of Lists)
+Implementing a tree using the list of lists approach.
+- **File**: `Trees/buildTreeTest.py`
+
 ### Tree Level Order Print
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
@@ -201,6 +207,23 @@ A more general implementation of Depth First Search.
 ### Basic Exception Handling
 Demonstrates `try-except-else-finally` blocks and user input validation.
 - **File**: `Error-debug/ErrorExceptions.py`
+
+---
+
+## Usage
+
+Most scripts in this repository are standalone and can be executed directly using the Python 3 interpreter. They typically include their own test cases or verification logic at the bottom of the file.
+
+Example:
+```bash
+python3 Arrays/Anagram_Check_Sorted_Sol.py
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details (if available).
 
 ---
 
