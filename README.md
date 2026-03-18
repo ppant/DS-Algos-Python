@@ -13,6 +13,8 @@ This repository contains a collection of common programming problems and data st
 - [Sorting](#sorting)
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
+- [Usage](#usage)
+- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ---
@@ -149,6 +151,10 @@ Implementing a tree using classes and references.
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
 
+### Tree Representation (List of Lists)
+Implementing a tree using list of lists.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Sorting
@@ -201,6 +207,28 @@ A more general implementation of Depth First Search.
 ### Basic Exception Handling
 Demonstrates `try-except-else-finally` blocks and user input validation.
 - **File**: `Error-debug/ErrorExceptions.py`
+
+---
+
+## Usage
+
+Most scripts in this repository are standalone and can be executed directly using the Python 3 interpreter. To run a script, navigate to the repository's root directory and use the following command:
+
+```bash
+python3 path/to/script.py
+```
+
+For example, to run the Array Pair Sum solution:
+
+```bash
+python3 Arrays/ArrayPairSumSol.py
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
