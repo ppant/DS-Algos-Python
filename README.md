@@ -145,6 +145,10 @@ Trim a BST so all nodes are within a given range `[min, max]`.
 Implementing a tree using classes and references.
 - **File**: `Trees/TreeRepresentationWithNodesReferences.py`
 
+### Tree Representation (List of Lists)
+Implementing a tree using a list of lists representation.
+- **File**: `Trees/buildTreeTest.py`
+
 ### Tree Level Order Print
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
