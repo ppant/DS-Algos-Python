@@ -13,7 +13,9 @@ This repository contains a collection of common programming problems and data st
 - [Sorting](#sorting)
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
+- [Usage](#usage)
 - [Acknowledgments](#acknowledgments)
+- [License](#license)
 
 ---
 
@@ -149,6 +151,10 @@ Implementing a tree using classes and references.
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
 
+### Tree Representation (List of Lists)
+Implementing a tree using list of lists.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Sorting
@@ -204,7 +210,22 @@ Demonstrates `try-except-else-finally` blocks and user input validation.
 
 ---
 
+## Usage
+Most of the scripts can be run directly using Python 3:
+
+```bash
+python3 path/to/script.py
+```
+
+For example:
+```bash
+python3 Arrays/Anagram_Check_Sorted_Sol.py
+```
+
 ## Acknowledgments
 - [Python for Data Structures, Algorithms, and Interviews on Udemy](https://www.udemy.com)
 - [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
 - [Big O Notation - Plain English Explanation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation/487278#487278)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
