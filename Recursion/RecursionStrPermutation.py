@@ -35,8 +35,8 @@ def permute(str):
             # so grab everything till that index and then index + 1 till the end
             for perm in permute(str[:i] + str[i + 1:]):
                 # Add it to output ( letter and its permutation)
-                print 'Current letter is: ',cur_letter
-                print 'Perm is: ',perm
+                # print('Current letter is: ', cur_letter)
+                # print('Perm is: ', perm)
                 out += [cur_letter + perm]
 
     return out

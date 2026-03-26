@@ -3,6 +3,7 @@
 This repository contains a collection of common programming problems and data structure implementations in Python.
 
 ## Table of Contents
+- [Usage](#usage)
 - [Arrays](#arrays)
 - [Linked Lists](#linked-lists)
 - [Stacks](#stacks)
@@ -14,6 +15,18 @@ This repository contains a collection of common programming problems and data st
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
 - [Acknowledgments](#acknowledgments)
+- [License](#license)
+
+---
+
+## Usage
+
+Most scripts in this repository are standalone and can be executed directly using the Python 3 interpreter.
+
+Example:
+```bash
+python3 Arrays/Anagram_Check_Sorted_Sol.py
+```
 
 ---
 
@@ -208,3 +221,8 @@ Demonstrates `try-except-else-finally` blocks and user input validation.
 - [Python for Data Structures, Algorithms, and Interviews on Udemy](https://www.udemy.com)
 - [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
 - [Big O Notation - Plain English Explanation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation/487278#487278)
+
+---
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

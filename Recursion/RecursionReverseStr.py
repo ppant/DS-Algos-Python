@@ -12,8 +12,8 @@ def reverse_str(str):
         return str
     else:
         # Implement recursive reverse
-        # Take first index of the string and then add rest starts from index 1 and do a recursive call
-        return reverse_str(str[1:] + str[0])        
+        # Reverse the remainder of the string and then add the first character to the end
+        return reverse_str(str[1:]) + str[0]
         
 # Test
 print(reverse_str('hello world'))
