@@ -13,6 +13,8 @@ This repository contains a collection of common programming problems and data st
 - [Sorting](#sorting)
 - [Graph Algorithms](#graph-algorithms)
 - [Error Handling](#error-handling)
+- [Usage](#usage)
+- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ---
@@ -201,6 +203,20 @@ A more general implementation of Depth First Search.
 ### Basic Exception Handling
 Demonstrates `try-except-else-finally` blocks and user input validation.
 - **File**: `Error-debug/ErrorExceptions.py`
+
+---
+
+## Usage
+Most of these scripts can be executed directly using the Python 3 interpreter. For example:
+```bash
+python3 Arrays/Anagram_Check_Sorted_Sol.py
+```
+Some scripts may have dependencies or require specific setup as described in their respective subdirectory READMEs.
+
+---
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
