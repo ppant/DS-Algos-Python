@@ -18,6 +18,7 @@ This repository contains a collection of common programming problems and data st
 ---
 
 ## Arrays
+[Explore Arrays](Arrays/README.md)
 
 ### Anagram Check
 Checks if two strings are anagrams of each other.
@@ -34,6 +35,7 @@ Find the missing element in a shuffled second array.
 ---
 
 ## Linked Lists
+[Explore Linked Lists](LinkedLists/README.md)
 
 ### Singly Linked List Implementation
 Basic skeleton for a Singly Linked List.
@@ -58,6 +60,7 @@ Find the nth to last node in a linked list.
 ---
 
 ## Stacks
+[Explore Stacks](Stacks/README.md)
 
 ### Stack Implementation
 Basic stack operations (LIFO): `push`, `pop`, `peek`, `isEmpty`, `size`.
@@ -70,6 +73,7 @@ Check if a string of opening and closing parentheses is balanced.
 ---
 
 ## Queues
+[Explore Queues](Queues/README.md)
 
 ### Queue Implementation
 Basic queue operations (FIFO): `enqueue`, `dequeue`, `isEmpty`, `size`.
@@ -82,6 +86,7 @@ Implement a queue using two stacks.
 ---
 
 ## Deque
+[Explore Deque](deque/README.md)
 
 ### Deque Implementation
 Double-ended queue operations: `addFront`, `addRear`, `removeFront`, `removeRear`, `isEmpty`, `size`.
@@ -90,6 +95,7 @@ Double-ended queue operations: `addFront`, `addRear`, `removeFront`, `removeRear
 ---
 
 ## Recursion
+[Explore Recursion](Recursion/README.md)
 
 ### Cumulative Sum
 Compute the cumulative sum from 0 to `n`.
@@ -122,6 +128,7 @@ Find the fewest coins needed to make a change amount.
 ---
 
 ## Trees
+[Explore Trees](Trees/README.md)
 
 ### Binary Search Tree Implementation
 - **File**: `Trees/BinarySearchTreesImple.py`
@@ -149,9 +156,14 @@ Implementing a tree using classes and references.
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
 
+### Build Tree Test
+Test script for building trees.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Sorting
+[Explore Sorting](Sorting/README.md)
 
 ### Bubble Sort
 - **File**: `Sorting/BubbleSortImple.py`
@@ -180,6 +192,7 @@ Print a binary tree in level order.
 ---
 
 ## Graph Algorithms
+[Explore Graph Algorithms](GraphAlgorithms/README.md)
 
 ### Adjacency List Implementation
 - **File**: `GraphAlgorithms/AdjacencyListGraphImple.py`
@@ -197,6 +210,7 @@ A more general implementation of Depth First Search.
 ---
 
 ## Error Handling
+[Explore Error Handling](Error-debug/README.md)
 
 ### Basic Exception Handling
 Demonstrates `try-except-else-finally` blocks and user input validation.
