@@ -149,6 +149,10 @@ Implementing a tree using classes and references.
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
 
+### Tree Representation (List of Lists)
+Implementing a tree using list-of-lists approach.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Sorting
