@@ -3,16 +3,16 @@
 This repository contains a collection of common programming problems and data structure implementations in Python.
 
 ## Table of Contents
-- [Arrays](#arrays)
-- [Linked Lists](#linked-lists)
-- [Stacks](#stacks)
-- [Queues](#queues)
-- [Deque](#deque)
-- [Recursion](#recursion)
-- [Trees](#trees)
-- [Sorting](#sorting)
-- [Graph Algorithms](#graph-algorithms)
-- [Error Handling](#error-handling)
+- [Arrays](Arrays/README.md)
+- [Linked Lists](LinkedLists/README.md)
+- [Stacks](Stacks/README.md)
+- [Queues](Queues/README.md)
+- [Deque](deque/README.md)
+- [Recursion](Recursion/README.md)
+- [Trees](Trees/README.md)
+- [Sorting](Sorting/README.md)
+- [Graph Algorithms](GraphAlgorithms/README.md)
+- [Error Handling](Error-debug/README.md)
 - [Acknowledgments](#acknowledgments)
 
 ---
@@ -148,6 +148,10 @@ Implementing a tree using classes and references.
 ### Tree Level Order Print
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
+
+### Tree Build Test
+Test implementation for building trees using a list-of-lists approach.
+- **File**: `Trees/buildTreeTest.py`
 
 ---
 
