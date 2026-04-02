@@ -3,17 +3,29 @@
 This repository contains a collection of common programming problems and data structure implementations in Python.
 
 ## Table of Contents
-- [Arrays](#arrays)
-- [Linked Lists](#linked-lists)
-- [Stacks](#stacks)
-- [Queues](#queues)
-- [Deque](#deque)
-- [Recursion](#recursion)
-- [Trees](#trees)
-- [Sorting](#sorting)
-- [Graph Algorithms](#graph-algorithms)
-- [Error Handling](#error-handling)
+- [Arrays](Arrays/README.md)
+- [Linked Lists](LinkedLists/README.md)
+- [Stacks](Stacks/README.md)
+- [Queues](Queues/README.md)
+- [Deque](deque/README.md)
+- [Recursion](Recursion/README.md)
+- [Trees](Trees/README.md)
+- [Sorting](Sorting/README.md)
+- [Graph Algorithms](GraphAlgorithms/README.md)
+- [Error Handling](Error-debug/README.md)
+- [Usage](#usage)
+- [License](#license)
 - [Acknowledgments](#acknowledgments)
+
+---
+
+## Usage
+Each script in this repository is standalone and can be executed using a Python 3 interpreter.
+
+Example:
+```bash
+python3 Arrays/Anagram_Check_Sorted_Sol.py
+```
 
 ---
 
@@ -149,6 +161,10 @@ Implementing a tree using classes and references.
 Print a binary tree in level order.
 - **File**: `Trees/TreeLevelOrderPrintImple.py`
 
+### Build Tree (List of Lists)
+Building a tree using a list-of-lists representation.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Sorting
@@ -201,6 +217,11 @@ A more general implementation of Depth First Search.
 ### Basic Exception Handling
 Demonstrates `try-except-else-finally` blocks and user input validation.
 - **File**: `Error-debug/ErrorExceptions.py`
+
+---
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
