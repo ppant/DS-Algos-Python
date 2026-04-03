@@ -3,6 +3,16 @@
 This repository contains a collection of common programming problems and data structure implementations in Python.
 
 ## Table of Contents
+- [Arrays](Arrays/README.md)
+- [Linked Lists](LinkedLists/README.md)
+- [Stacks](Stacks/README.md)
+- [Queues](Queues/README.md)
+- [Deque](deque/README.md)
+- [Recursion](Recursion/README.md)
+- [Trees](Trees/README.md)
+- [Sorting](Sorting/README.md)
+- [Graph Algorithms](GraphAlgorithms/README.md)
+- [Error Handling](Error-debug/README.md)
 - [Arrays](Arrays/)
 - [Linked Lists](LinkedLists/)
 - [Stacks](Stacks/)
@@ -237,6 +247,26 @@ Demonstrates `try-except-else-finally` blocks and user input validation.
 - **File**: `Error-debug/ErrorExceptions.py`
 
 ---
+
+## Usage
+
+The implementation of data structures and algorithms is in Python 3. You can run any script using the following command:
+
+```bash
+python3 <path_to_script.py>
+```
+
+For example, to run the Bubble Sort implementation:
+
+```bash
+python3 Sorting/BubbleSortImple.py
+```
+
+## License
+
+This project is licensed under the MIT License.
+
+Copyright (c) 2017 Pradeep K. Pant
 
 ## Acknowledgments
 - [Python for Data Structures, Algorithms, and Interviews on Udemy](https://www.udemy.com)
