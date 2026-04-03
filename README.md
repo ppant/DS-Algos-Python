@@ -3,21 +3,46 @@
 This repository contains a collection of common programming problems and data structure implementations in Python.
 
 ## Table of Contents
-- [Arrays](#arrays)
-- [Linked Lists](#linked-lists)
-- [Stacks](#stacks)
-- [Queues](#queues)
-- [Deque](#deque)
-- [Recursion](#recursion)
-- [Trees](#trees)
-- [Sorting](#sorting)
-- [Graph Algorithms](#graph-algorithms)
-- [Error Handling](#error-handling)
+- [Arrays](Arrays/)
+- [Linked Lists](LinkedLists/)
+- [Stacks](Stacks/)
+- [Queues](Queues/)
+- [Deque](deque/)
+- [Recursion](Recursion/)
+- [Trees](Trees/)
+- [Sorting](Sorting/)
+- [Graph Algorithms](GraphAlgorithms/)
+- [Error Handling](Error-debug/)
+- [Usage](#usage)
+- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ---
 
+## Usage
+
+Most scripts in this repository are standalone and can be executed directly using the Python 3 interpreter.
+
+```bash
+python3 path/to/script.py
+```
+
+For example, to run the Bubble Sort implementation:
+
+```bash
+python3 Sorting/BubbleSortImple.py
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
 ## Arrays
+Implementation of common array-based algorithms. See [Arrays/README.md](Arrays/README.md) for details.
 
 ### Anagram Check
 Checks if two strings are anagrams of each other.
@@ -34,6 +59,7 @@ Find the missing element in a shuffled second array.
 ---
 
 ## Linked Lists
+Various types of linked lists and related algorithms. See [LinkedLists/README.md](LinkedLists/README.md) for details.
 
 ### Singly Linked List Implementation
 Basic skeleton for a Singly Linked List.
@@ -58,9 +84,10 @@ Find the nth to last node in a linked list.
 ---
 
 ## Stacks
+LIFO (Last-In-First-Out) data structure and applications. See [Stacks/README.md](Stacks/README.md) for details.
 
 ### Stack Implementation
-Basic stack operations (LIFO): `push`, `pop`, `peek`, `isEmpty`, `size`.
+Basic stack operations: `push`, `pop`, `peek`, `isEmpty`, `size`.
 - **File**: `Stacks/StackImple.py`
 
 ### Balanced Parentheses Check
@@ -70,9 +97,10 @@ Check if a string of opening and closing parentheses is balanced.
 ---
 
 ## Queues
+FIFO (First-In-First-Out) data structure implementations. See [Queues/README.md](Queues/README.md) for details.
 
 ### Queue Implementation
-Basic queue operations (FIFO): `enqueue`, `dequeue`, `isEmpty`, `size`.
+Basic queue operations: `enqueue`, `dequeue`, `isEmpty`, `size`.
 - **File**: `Queues/QueueImple.py`
 
 ### Queue with Two Stacks
@@ -82,6 +110,7 @@ Implement a queue using two stacks.
 ---
 
 ## Deque
+Double-ended queue operations. See [deque/README.md](deque/README.md) for details.
 
 ### Deque Implementation
 Double-ended queue operations: `addFront`, `addRear`, `removeFront`, `removeRear`, `isEmpty`, `size`.
@@ -90,6 +119,7 @@ Double-ended queue operations: `addFront`, `addRear`, `removeFront`, `removeRear
 ---
 
 ## Recursion
+Problems solved using recursion and dynamic programming. See [Recursion/README.md](Recursion/README.md) for details.
 
 ### Cumulative Sum
 Compute the cumulative sum from 0 to `n`.
@@ -122,6 +152,7 @@ Find the fewest coins needed to make a change amount.
 ---
 
 ## Trees
+Tree-based data structures and algorithms. See [Trees/README.md](Trees/README.md) for details.
 
 ### Binary Search Tree Implementation
 - **File**: `Trees/BinarySearchTreesImple.py`
@@ -152,6 +183,7 @@ Print a binary tree in level order.
 ---
 
 ## Sorting
+Common sorting algorithms with their complexities. See [Sorting/README.md](Sorting/README.md) for details.
 
 ### Bubble Sort
 - **File**: `Sorting/BubbleSortImple.py`
@@ -180,6 +212,7 @@ Print a binary tree in level order.
 ---
 
 ## Graph Algorithms
+Common graph-based algorithms and data structures. See [GraphAlgorithms/README.md](GraphAlgorithms/README.md) for details.
 
 ### Adjacency List Implementation
 - **File**: `GraphAlgorithms/AdjacencyListGraphImple.py`
@@ -197,6 +230,7 @@ A more general implementation of Depth First Search.
 ---
 
 ## Error Handling
+Examples of error handling and debugging techniques in Python. See [Error-debug/README.md](Error-debug/README.md) for details.
 
 ### Basic Exception Handling
 Demonstrates `try-except-else-finally` blocks and user input validation.
