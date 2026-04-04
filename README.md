@@ -131,6 +131,10 @@ Implementing a tree using list-of-lists approach.
 Test script for building trees.
 - **File**: `Trees/buildTreeTest.py`
 
+### Tree Representation (List of Lists)
+Building a tree and manipulating it using a list of lists.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Usage
