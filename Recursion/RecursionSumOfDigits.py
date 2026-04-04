@@ -4,7 +4,7 @@
 # Given an integer, create a function which returns the sum of all the individual 
 # digits in that integer. For example: if n = 4321, return 4+3+2+1
 
-# Implement recusion sum routine
+# Implement recursion sum routine
 def recursion_sum_digits(n):
     # Checking edge case is really important
     if n == 0:

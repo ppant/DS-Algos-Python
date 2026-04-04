@@ -20,6 +20,18 @@ This repository contains a collection of common programming problems and data st
 - [Usage](#usage)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
+- [License](#license)
+
+---
+
+## Usage
+
+Most scripts in this repository are standalone and can be executed directly using the Python 3 interpreter.
+
+Example:
+```bash
+python3 Arrays/Anagram_Check_Sorted_Sol.py
+```
 
 ---
 
