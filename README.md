@@ -115,6 +115,10 @@ Algorithms for graph traversal and pathfinding.
 Examples of robust error handling in Python.
 - [Exceptions](Error-debug/ErrorExceptions.py): `try-except-else-finally` blocks and input validation.
 
+### Build Tree (List of Lists)
+Building a tree using a list-of-lists representation.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Usage
@@ -137,6 +141,11 @@ python3 Sorting/BubbleSortImple.py
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Copyright (c) 2017 Pradeep K. Pant
+
+---
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
