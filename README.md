@@ -123,6 +123,10 @@ Building a tree using a list-of-lists representation.
 Test implementation for building trees using a list-of-lists approach.
 - **File**: `Trees/buildTreeTest.py`
 
+### Tree Representation (List of Lists)
+Implementing a tree using list-of-lists approach.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Usage
