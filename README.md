@@ -151,6 +151,10 @@ Building a tree and manipulating it using a list of lists.
 Build a tree and fetch nodes and insert using list of lists.
 - **File**: `Trees/buildTreeTest.py`
 
+### Build Tree Test
+Demonstrates building a tree and manipulating nodes using a list-of-lists approach.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Usage
