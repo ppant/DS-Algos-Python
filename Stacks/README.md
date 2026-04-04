@@ -1,13 +1,8 @@
 # Stacks
 
-This directory contains implementations of stack data structures and related problems.
+This directory contains Python implementations of the Stack data structure and its applications.
 
 ## Contents
 
-### Basic Stack Implementation
-Basic stack operations (LIFO): `push`, `pop`, `peek`, `isEmpty`, `size`.
-- [StackImple.py](StackImple.py)
-
-### Balanced Parentheses Check
-Check if a string of opening and closing parentheses is balanced.
-- [BalanceParenthlessCheckImple.py](BalanceParenthlessCheckImple.py)
+- [Stack Implementation](StackImple.py): Basic implementation of a LIFO (Last-In-First-Out) stack using a Python list. Includes `push`, `pop`, `peek`, `isEmpty`, and `size` methods.
+- [Balanced Parentheses Check](BalanceParenthlessCheckImple.py): Uses a stack to check if a string of opening and closing parentheses (round, square, and curly) is balanced.

@@ -1,23 +1,12 @@
-# Sorting
+# Sorting Algorithms
 
-This directory contains Python implementations of common sorting algorithms.
+This directory contains Python implementations of various sorting algorithms with explanations of their complexities.
 
 ## Contents
 
-### Bubble Sort
-- [BubbleSortImple.py](BubbleSortImple.py): $O(n^2)$ worst and average case, $O(n)$ best case.
-
-### Selection Sort
-- [SelectionSortImple.py](SelectionSortImple.py): $O(n^2)$ for all cases.
-
-### Insertion Sort
-- [InsertionSortImple.py](InsertionSortImple.py): $O(n^2)$ worst and average case, $O(n)$ best case.
-
-### Merge Sort
-- [MergeSortImple.py](MergeSortImple.py): $O(n \log n)$ for all cases.
-
-### Quick Sort
-- [QuickSortImple.py](QuickSortImple.py): $O(n^2)$ worst case, $O(n \log n)$ average/best case.
-
-### Shell Sort
-- [ShellSortImple.py](ShellSortImple.py): Complexity between $O(n)$ and $O(n^2)$ depending on increment sequence.
+- [Bubble Sort](BubbleSortImple.py): Implementation of Bubble Sort with $O(n^2)$ complexity.
+- [Selection Sort](SelectionSortImple.py): Implementation of Selection Sort, improving on Bubble Sort by making only one exchange per pass.
+- [Insertion Sort](InsertionSortImple.py): Implementation of Insertion Sort, maintaining a sorted sublist.
+- [Shell Sort](ShellSortImple.py): Implementation of Shell Sort (diminishing increment sort), improving on Insertion Sort.
+- [Merge Sort](MergeSortImple.py): A recursive "divide and conquer" algorithm with $O(n \log n)$ complexity.
+- [Quick Sort](QuickSortImple.py): Implementation of Quick Sort (partition exchange sort), using divide and conquer in-place.
