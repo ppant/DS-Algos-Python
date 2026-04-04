@@ -176,7 +176,7 @@ python3 Sorting/BubbleSortImple.py
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Copyright (c) 2017 Pradeep K. Pant
+Copyright (c) 2007 - 2026 Pradeep K. Pant
 
 ---
 
