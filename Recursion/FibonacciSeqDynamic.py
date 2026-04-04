@@ -22,6 +22,6 @@ def fibonacci_dynamic(n):
 
 # Test
 # We'll try to find the 9th no in the fibnacci sequence which is 34
-print(fibonacci_dynamic(9))
+print (fibonacci_dynamic(9))
 # 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 # The recursive-memoization solution is exponential time Big-O , with O(n)

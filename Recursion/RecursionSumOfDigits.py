@@ -6,16 +6,15 @@
 
 # Implement recursion sum routine
 def recursion_sum_digits(n):
-    # Base case: if n is less than 10, it's a single digit
-    if n < 10:
-        return n
-    # Recursion: use modulo operator to get last digit and then use floor divide
-    # to pass the rest to recursive routine
+    # Checking edge case is really important
+    if n == 0:
+        return 0
+    # Recursion, use modulo operator to get RMD and then use floor divide to pass
+    # to recursive routine next interation repeat same procedure
+    # with small number and add
     else:
-        return n % 10 + recursion_sum_digits(n // 10)
+        return n%10 + recursion_sum_digits(n//10)
     
 # Test
-print(recursion_sum_digits(4321))
+print (recursion_sum_digits(4321))
 # Result = 4+3+2+1 = 10
-print(recursion_sum_digits(12))
-# Result = 1+2 = 3
