@@ -119,6 +119,10 @@ Examples of robust error handling in Python.
 Building a tree using a list-of-lists representation.
 - **File**: `Trees/buildTreeTest.py`
 
+### Tree Build Test
+Test implementation for building trees using a list-of-lists approach.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Usage
