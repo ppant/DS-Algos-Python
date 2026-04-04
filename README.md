@@ -1,97 +1,151 @@
 # Data Structures and Algorithms using Python
 
-A comprehensive collection of fundamental data structures and algorithms implemented in Python 3. This repository serves as a reference for common programming problems and their solutions, covering everything from basic array manipulations to complex graph algorithms.
+This repository contains a collection of common programming problems and data structure implementations in Python 3. It is designed to serve as a reference for students and developers preparing for technical interviews or interested in fundamental computer science concepts.
 
-## 📁 Project Structure
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Data Structures](#data-structures)
+  - [Arrays](#arrays)
+  - [Linked Lists](#linked-lists)
+  - [Stacks](#stacks)
+  - [Queues](#queues)
+  - [Deque](#deque)
+  - [Trees](#trees)
+- [Algorithms](#algorithms)
+  - [Recursion](#recursion)
+  - [Sorting](#sorting)
+  - [Graph Algorithms](#graph-algorithms)
+- [Error Handling](#error-handling)
+- [Usage](#usage)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+---
+
+## Project Structure
+
+The repository is organized into categorical directories, each containing relevant implementations and a dedicated `README.md` for more details.
 
 ```text
 .
-├── Arrays/             # Array-based problems (Anagrams, Finding missing elements, etc.)
-├── deque/              # Double-ended queue implementation
-├── Error-debug/        # Examples of error handling and debugging in Python
-├── GraphAlgorithms/    # BFS, DFS, Word Ladder, Knight's Tour
-├── LinkedLists/        # Singly and Doubly Linked Lists, Reversal, Cycle detection
-├── Queues/             # Queue implementation and Queues using Stacks
-├── Recursion/          # Cumulative sum, Factorial, Fibonacci, Coin change, etc.
-├── Sorting/            # Bubble, Selection, Insertion, Merge, Quick, and Shell sorts
-├── Stacks/             # Stack implementation and Balanced Parentheses check
-└── Trees/              # Binary Trees, BSTs, Heaps, Tree Traversal, and Balancing
+├── Arrays/             # Array-based problems and algorithms
+├── Error-debug/        # Examples of error handling and debugging
+├── GraphAlgorithms/    # Graphs, BFS, DFS, and related problems
+├── LinkedLists/        # Singly and Doubly Linked Lists
+├── Queues/             # Queue implementations
+├── Recursion/          # Recursive problems and Dynamic Programming
+├── Sorting/            # Common sorting algorithms
+├── Stacks/             # Stack implementations and applications
+├── Trees/              # Binary Trees, BSTs, and Heaps
+└── deque/              # Double-ended queue implementation
 ```
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
-- Python 3.x
+## Data Structures
 
-### Usage
-Each script is designed to be standalone. You can run any file directly using the Python interpreter:
+### Arrays
+Common array-based algorithms and manipulations.
+- [Anagram Check](Arrays/): [Sorted Solution](Arrays/Anagram_Check_Sorted_Sol.py), [Manual Solution](Arrays/Anagram_Check_manual_Sol.py)
+- [Array Pair Sum](Arrays/ArrayPairSumSol.py): Find unique pairs that sum to $k$.
+- [Find Missing Element](Arrays/): [XOR](Arrays/ArrayFindTheMissingElement_XOR_sol.py), [Brute Force](Arrays/ArrayFindTheMissingElement_brute_force_sol.py), [Hash Table](Arrays/ArrayFindTheMissingElement_hash_table_sol.py), [Sum/Subtract](Arrays/ArrayFindTheMissingElement_takingSumandSubtract_sol.py)
+
+### Linked Lists
+Implementations and problems involving linked structures.
+- [Singly Linked List](LinkedLists/SingleLinkedListImple.py) & [Doubly Linked List](LinkedLists/DoublyLinkedListImple.py)
+- [Cycle Check](LinkedLists/SinglyLinkedListCycleCheckImple.py): Detect cycles using two pointers.
+- [Reverse Linked List](LinkedLists/LinkedListReversal.py): In-place reversal.
+- [Nth to Last Node](LinkedLists/LinkedListNthToLastNode.py): Find the $n$-th node from the end.
+
+### Stacks
+LIFO (Last-In-First-Out) data structures.
+- [Stack Implementation](Stacks/StackImple.py): Basic operations (`push`, `pop`, `peek`).
+- [Balanced Parentheses](Stacks/BalanceParenthlessCheckImple.py): Check for balanced brackets in a string.
+
+### Queues
+FIFO (First-In-First-Out) data structures.
+- [Queue Implementation](Queues/QueueImple.py): Basic operations (`enqueue`, `dequeue`).
+- [Queue with Two Stacks](Queues/QueueWith2StacksImple.py): Implementing FIFO using two LIFO stacks.
+
+### Deque
+Double-ended queue operations.
+- [Deque Implementation](deque/DequeImple.py): Operations at both ends (`addFront`, `addRear`, etc.).
+
+### Trees
+Hierarchical data structures.
+- [Binary Search Tree (BST)](Trees/BinarySearchTreesImple.py): Full implementation.
+- [Binary Heap](Trees/BinaryHeapImple.py): Min-heap implementation.
+- [Validate BST](Trees/): [Solution 1](Trees/BinarySearchTreeCheckImpleSol1.py), [Solution 2](Trees/BinarySearchTreeCheckImpleSol2.py)
+- [Binary Search](Trees/): [Iterative](Trees/BinarySearchImple.py), [Recursive](Trees/BinarySearchRecursiveImple.py)
+- [Tree Traversals](Trees/TreeLevelOrderPrintImple.py): Level order (BFS) printing.
+- [Trim a BST](Trees/TrimBinarySearchTreeImple.py): Keep nodes within a range.
+- [Representations](Trees/): [Nodes & References](Trees/TreeRepresentationWithNodesReferences.py), [List of Lists](Trees/buildTreeTest.py)
+
+---
+
+## Algorithms
+
+### Recursion
+Solving problems by breaking them into smaller sub-problems.
+- [Fibonacci Sequence](Recursion/): [Iterative](Recursion/FibonacciSeqIterative.py), [Recursive](Recursion/FibonacciSeqRecursion.py), [Dynamic Programming](Recursion/FibonacciSeqDynamic.py)
+- [Coin Change](Recursion/): [Recursive](Recursion/CoinChangeProblemRecursion.py), [Dynamic Programming](Recursion/CoinChangeProblemDynamic.py)
+- [String Operations](Recursion/): [Reverse String](Recursion/RecursionReverseStr.py), [Permutations](Recursion/RecursionStrPermutation.py)
+- [Math & Misc](Recursion/): [Cumulative Sum](Recursion/RecursionCumulativeSum.py), [Sum of Digits](Recursion/RecursionSumOfDigits.py), [Word Split](Recursion/RecursionWordSplit.py)
+
+### Sorting
+Algorithms for arranging elements in a specific order.
+- [Bubble Sort](Sorting/BubbleSortImple.py)
+- [Selection Sort](Sorting/SelectionSortImple.py)
+- [Insertion Sort](Sorting/InsertionSortImple.py)
+- [Shell Sort](Sorting/ShellSortImple.py)
+- [Merge Sort](Sorting/MergeSortImple.py)
+- [Quick Sort](Sorting/QuickSortImple.py)
+
+### Graph Algorithms
+Algorithms for graph traversal and pathfinding.
+- [Adjacency List](GraphAlgorithms/AdjacencyListGraphImple.py): Graph ADT implementation.
+- [Breadth First Search (BFS)](GraphAlgorithms/BFS.py): Word Ladder problem.
+- [Depth First Search (DFS)](GraphAlgorithms/DFSGeneral.py): General implementation and [Knight's Tour](GraphAlgorithms/TheKnightsTourProblem.py).
+
+---
+
+## Error Handling
+
+Examples of robust error handling in Python.
+- [Exceptions](Error-debug/ErrorExceptions.py): `try-except-else-finally` blocks and input validation.
+
+### Build Tree (List of Lists)
+Building a tree using a list-of-lists representation.
+- **File**: `Trees/buildTreeTest.py`
+
+---
+
+## Usage
+
+Most scripts are standalone. You can run them using the Python 3 interpreter:
 
 ```bash
-python Arrays/ArrayPairSumSol.py
+python3 path/to/script.py
 ```
 
-Most files include test cases or example usage at the bottom, so you can see the algorithm in action immediately upon execution.
+Example:
+```bash
+python3 Sorting/BubbleSortImple.py
+```
 
 ---
 
-## 📚 Contents
+## License
 
-### [Arrays](./Arrays)
-- **Anagram Check**: Determine if two strings are anagrams.
-- **Array Pair Sum**: Find unique pairs that sum up to a value `k`.
-- **Find Missing Element**: Multiple solutions (XOR, Hash Table, Sum) to find a missing element in a shuffled array.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### [Linked Lists](./LinkedLists)
-- **Singly & Doubly Linked Lists**: Basic implementations.
-- **Cycle Check**: Detect cycles using Floyd's Cycle-Finding Algorithm.
-- **Reversal**: In-place reversal of a linked list.
-- **Nth to Last Node**: Locate the Nth node from the end.
-
-### [Stacks](./Stacks)
-- **Stack Implementation**: Standard LIFO operations.
-- **Balanced Parentheses**: Algorithm to check for balanced brackets in an expression.
-
-### [Queues & Deques](./Queues)
-- **Queue Implementation**: Standard FIFO operations.
-- **Queue with Two Stacks**: Implementation of a queue using two stacks.
-- **Deque**: Double-ended queue implementation in [deque/](./deque).
-
-### [Recursion](./Recursion)
-- **Fibonacci Sequence**: Iterative, Recursive, and Dynamic Programming (Memoization) approaches.
-- **Coin Change Problem**: Finding the minimum number of coins for change.
-- **Permutations**: Generating all permutations of a string.
-- **Cumulative Sum & Sum of Digits**: Basic recursive exercises.
-
-### [Trees](./Trees)
-- **Binary Search Tree (BST)**: Implementation and validation.
-- **Binary Heap**: Implementation of a priority queue using a heap.
-- **Tree Traversal**: Level order print and other traversal methods.
-- **BST Trimming**: Removing nodes outside a specific range.
-- **Build Tree**: Example of building a tree using lists in `buildTreeTest.py`.
-
-### [Sorting](./Sorting)
-Implementations with complexity analysis:
-- **Bubble Sort**: $O(n^2)$
-- **Selection Sort**: $O(n^2)$
-- **Insertion Sort**: $O(n^2)$
-- **Merge Sort**: $O(n \log n)$
-- **Quick Sort**: $O(n \log n)$
-- **Shell Sort**: $O(n \log n)$ to $O(n^2)$
-
-### [Graph Algorithms](./GraphAlgorithms)
-- **Adjacency List**: Standard graph representation.
-- **BFS & DFS**: Breadth-First and Depth-First Search implementations.
-- **Word Ladder Problem**: Application of BFS.
-- **Knight's Tour**: Application of DFS.
-
-### [Error Handling](./Error-debug)
-- **Exception Handling**: Demonstration of `try-except-else-finally` blocks.
+Copyright (c) 2017 Pradeep K. Pant
 
 ---
 
-## 🎓 Acknowledgments
-- Inspired by the Udemy course "Python for Data Structures, Algorithms, and Interviews".
-- "Problem Solving with Algorithms and Data Structures using Python" by Bradley N. Miller and David L. Ranum.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 *Author: Pradeep K. Pant*
