@@ -1,25 +1,49 @@
 # Binary Search Tree Check - Validate BST
 # Author: Pradeep K. Pant, ppant@cpan.org
-# Problem Statement
+
 # Given a binary tree, check whether it’s a binary search tree or not.
-# Solution strategy
-# 
-# Here is a simple solution- If a tree is a binary search tree, then traversing 
-# the tree inorder should lead to sorted order of the values in the tree. So, we 
-# can perform an inorder traversal and check whether the node values are sorted or not. 
+# Strategy: If a tree is a BST, then an in-order traversal should return
+# values in sorted order.
 
-tree_vals = []
+class Node:
+    def __init__(self, k, val):
+        self.key = k
+        self.payload = val
+        self.leftChild = None
+        self.rightChild = None
 
-def inorder(tree):
+    def getLeftChild(self):
+        return self.leftChild
+
+    def getRightChild(self):
+        return self.rightChild
+
+    def getRootVal(self):
+        return self.key
+
+def inorder(tree, tree_vals):
     if tree != None:
-        inorder(tree.getLeftChild())
+        inorder(tree.getLeftChild(), tree_vals)
         tree_vals.append(tree.getRootVal())
-        inorder(tree.getRightChild())
+        inorder(tree.getRightChild(), tree_vals)
         
 def sort_check(tree_vals):
     return tree_vals == sorted(tree_vals)
+
 # Test
-inorder(tree)
-sort_check(tree_vals)
+root = Node(3, "red")
+root.leftChild = Node(2, "at")
+root.rightChild = Node(4, "blue")
+root.rightChild.rightChild = Node(6, "yellow")
 
+vals = []
+inorder(root, vals)
+print(f"In-order traversal: {vals}")
+print(f"Is BST? {sort_check(vals)}")
 
+# Negative test
+root.leftChild.key = 5 # Break BST property
+vals = []
+inorder(root, vals)
+print(f"In-order traversal (broken): {vals}")
+print(f"Is BST? {sort_check(vals)}")
