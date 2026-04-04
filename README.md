@@ -147,6 +147,10 @@ Test script for building trees.
 Building a tree and manipulating it using a list of lists.
 - **File**: `Trees/buildTreeTest.py`
 
+### Build Tree Test
+Build a tree and fetch nodes and insert using list of lists.
+- **File**: `Trees/buildTreeTest.py`
+
 ---
 
 ## Usage
