@@ -1,13 +1,8 @@
 # Queues
 
-This directory contains implementations of the Queue data structure.
+This directory contains Python implementations of the Queue data structure.
 
 ## Contents
 
-### Simple Queue
-Basic queue operations (FIFO): `enqueue`, `dequeue`, `isEmpty`, `size`.
-- [QueueImple.py](QueueImple.py): Implementation using a list.
-
-### Queue with Two Stacks
-Implement a queue using two stacks (one for enqueue and one for dequeue).
-- [QueueWith2StacksImple.py](QueueWith2StacksImple.py): Using two lists as stacks.
+- [Queue Implementation](QueueImple.py): Basic implementation of a FIFO (First-In-First-Out) queue using a Python list. Includes `enqueue`, `dequeue`, `isEmpty`, and `size` methods.
+- [Queue with Two Stacks](QueueWith2StacksImple.py): Implements a queue using two stacks (represented by Python lists) to achieve FIFO behavior.

@@ -1,9 +1,7 @@
-# Error Handling and Debugging
+# Error and Debugging
 
-This directory contains examples of error handling and exception management in Python.
+This directory contains examples of error handling and debugging techniques in Python.
 
 ## Contents
 
-### Basic Exception Handling
-Demonstrates the use of `try-except-else-finally` blocks and user input validation to handle potential runtime errors gracefully.
-- [ErrorExceptions.py](ErrorExceptions.py): Example script for handling exceptions.
+- [Error and Exceptions](ErrorExceptions.py): Demonstrates the use of `try`, `except`, `else`, and `finally` blocks for robust error handling, specifically validating integer user input.

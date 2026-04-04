@@ -1,14 +1,11 @@
 # Linked Lists
 
-This directory contains Python implementations of singly and doubly linked lists and common linked list algorithms.
+This directory contains Python implementations of various types of linked lists and related algorithms.
 
 ## Contents
 
-### Basic Implementations
-- [SingleLinkedListImple.py](SingleLinkedListImple.py): Basic skeleton for a Singly Linked List.
-- [DoublyLinkedListImple.py](DoublyLinkedListImple.py): Basic skeleton for a Doubly Linked List.
-
-### Algorithms
-- [SinglyLinkedListCycleCheckImple.py](SinglyLinkedListCycleCheckImple.py): Check if a singly linked list contains a cycle using the "two runners" strategy.
-- [LinkedListReversal.py](LinkedListReversal.py): Recursive and iterative implementation to reverse a linked list.
-- [LinkedListNthToLastNode.py](LinkedListNthToLastNode.py): Find the nth to last node in a singly linked list.
+- [Singly Linked List Implementation](SingleLinkedListImple.py): Basic implementation of a singly linked list node and basic linkage.
+- [Doubly Linked List Implementation](DoublyLinkedListImple.py): Basic implementation of a doubly linked list node with `prev` and `next` pointers.
+- [Singly Linked List Cycle Check](SinglyLinkedListCycleCheckImple.py): Implements Floyd's Cycle-Finding Algorithm (two pointers) to detect cycles in a linked list.
+- [Linked List Reversal](LinkedListReversal.py): Reverses a singly linked list in-place in $O(n)$ time.
+- [Nth to Last Node](LinkedListNthToLastNode.py): Finds the $n$-th to last node in a singly linked list using two pointers.
