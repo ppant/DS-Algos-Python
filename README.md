@@ -48,7 +48,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
   - [Sorting](#sorting)
   - [Recursion & Dynamic Programming](#recursion--dynamic-programming)
   - [Graph Algorithms](#graph-algorithms)
-- [Error Handling & Debugging](#error-handling--debugging)
+- [Error Handling](#error-handling)
 - [Usage](#usage)
 - [Quick Reference](#quick-reference)
 - [License](#license)
@@ -88,7 +88,8 @@ python3 Sorting/BubbleSortImple.py
 ├── Sorting/             # 📊 Common sorting algorithms
 ├── Stacks/              # 📚 Stack implementations and applications
 ├── Trees/               # 🌳 Binary Trees, BSTs, Heaps, and Traversals
-├── deque/               # 🔄 Double-ended queue
+├── Deque/               # 🔄 Double-ended queue
+├── ErrorHandling/       # ⚠️ Error handling and debugging examples
 ├── CONTRIBUTING.md      # 🤝 Contribution guidelines
 ├── LICENSE              # 📄 MIT License
 └── README.md            # 📖 This file
@@ -100,39 +101,39 @@ python3 Sorting/BubbleSortImple.py
 
 ### Arrays 🔤
 Common array-based algorithms and manipulations.
-- [Anagram Check](Arrays/): [Sorted](Arrays/Anagram_Check_Sorted_Sol.py) & [Manual](Arrays/Anagram_Check_manual_Sol.py) solutions
-- [Array Pair Sum](Arrays/ArrayPairSumSol.py): Find pairs that sum to $k$
-- [Find Missing Element](Arrays/): [XOR](Arrays/ArrayFindTheMissingElement_XOR_sol.py), [Brute Force](Arrays/ArrayFindTheMissingElement_brute_force_sol.py), [Hash Table](Arrays/ArrayFindTheMissingElement_hash_table_sol.py), & [Sum](Arrays/ArrayFindTheMissingElement_takingSumandSubtract_sol.py) approaches
+- [Anagram Check](Arrays/): [Sorted](Arrays/Anagram_Check_Sorted_Sol.py) ($O(n \log n)$) & [Manual](Arrays/Anagram_Check_manual_Sol.py) ($O(n)$) solutions
+- [Array Pair Sum](Arrays/ArrayPairSumSol.py): Find pairs that sum to $k$ - $O(n)$
+- [Find Missing Element](Arrays/): [XOR](Arrays/ArrayFindTheMissingElement_XOR_sol.py) ($O(n)$), [Brute Force](Arrays/ArrayFindTheMissingElement_brute_force_sol.py) ($O(n \log n)$), [Hash Table](Arrays/ArrayFindTheMissingElement_hash_table_sol.py) ($O(n)$), & [Sum](Arrays/ArrayFindTheMissingElement_takingSumandSubtract_sol.py) ($O(n)$) approaches
 
 ### Linked Lists 🔗
 Implementations and problems involving linked structures.
-- [Singly Linked List](LinkedLists/SingleLinkedListImple.py) & [Doubly Linked List](LinkedLists/DoublyLinkedListImple.py)
-- [Cycle Detection](LinkedLists/SinglyLinkedListCycleCheckImple.py): Detect cycles using two pointers (Floyd's algorithm)
-- [Reverse Linked List](LinkedLists/LinkedListReversal.py): In-place reversal
-- [Nth to Last Node](LinkedLists/LinkedListNthToLastNode.py): Find the $n$-th node from the end
+- [Singly Linked List](LinkedLists/SingleLinkedListImple.py) & [Doubly Linked List](LinkedLists/DoublyLinkedListImple.py) - $O(1)$ for insertion/deletion at head
+- [Cycle Detection](LinkedLists/SinglyLinkedListCycleCheckImple.py): Detect cycles using Floyd's algorithm - $O(n)$
+- [Reverse Linked List](LinkedLists/LinkedListReversal.py): In-place reversal - $O(n)$
+- [Nth to Last Node](LinkedLists/LinkedListNthToLastNode.py): Find the $n$-th node from the end - $O(n)$
 
 ### Stacks 📚
 LIFO (Last-In-First-Out) data structures.
-- [Stack Implementation](Stacks/StackImple.py): Basic operations (push, pop, peek)
-- [Balanced Parentheses](Stacks/BalanceParenthlessCheckImple.py): Check for balanced brackets using a stack
+- [Stack Implementation](Stacks/StackImple.py): Basic operations (push, pop, peek) - $O(1)$
+- [Balanced Parentheses](Stacks/BalanceParenthlessCheckImple.py): Check for balanced brackets using a stack - $O(n)$
 
 ### Queues 📦
 FIFO (First-In-First-Out) data structures.
-- [Queue Implementation](Queues/QueueImple.py): Basic operations (enqueue, dequeue)
-- [Queue with Two Stacks](Queues/QueueWith2StacksImple.py): Implementing FIFO using LIFO structures
+- [Queue Implementation](Queues/QueueImple.py): Basic operations (enqueue, dequeue) - $O(1)$
+- [Queue with Two Stacks](Queues/QueueWith2StacksImple.py): Implementing FIFO using LIFO structures - $O(1)$ amortized
 
 ### Deque 🔄
 Double-ended queue operations.
-- [Deque Implementation](deque/DequeImple.py): Operations at both ends
+- [Deque Implementation](Deque/DequeImple.py): Operations at both ends - $O(1)$
 
 ### Trees 🌳
 Hierarchical data structures.
-- [Binary Search Tree](Trees/BinarySearchTreesImple.py): Complete BST implementation
-- [BST Validation](Trees/): [Solution 1 (In-order)](Trees/BinarySearchTreeCheckImpleSol1.py) & [Solution 2 (Range check)](Trees/BinarySearchTreeCheckImpleSol2.py)
-- [Binary Search](Trees/): [Iterative](Trees/BinarySearchImple.py) & [Recursive](Trees/BinarySearchRecursiveImple.py)
-- [Binary Heap](Trees/BinaryHeapImple.py): Min-heap implementation
-- [Tree Traversals](Trees/TreeLevelOrderPrintImple.py): Level order (BFS) printing
-- [Trim BST](Trees/TrimBinarySearchTreeImple.py): Keep nodes within a range
+- [Binary Search Tree](Trees/BinarySearchTreesImple.py): Complete BST implementation - $O(\log n)$ average
+- [BST Validation](Trees/): [Solution 1 (In-order)](Trees/BinarySearchTreeCheckImpleSol1.py) & [Solution 2 (Range check)](Trees/BinarySearchTreeCheckImpleSol2.py) - $O(n)$
+- [Binary Search](Trees/): [Iterative](Trees/BinarySearchImple.py) & [Recursive](Trees/BinarySearchRecursiveImple.py) - $O(\log n)$
+- [Binary Heap](Trees/BinaryHeapImple.py): Min-heap implementation - $O(\log n)$ for insert/extract
+- [Tree Traversals](Trees/TreeLevelOrderPrintImple.py): Level order (BFS) printing - $O(n)$
+- [Trim BST](Trees/TrimBinarySearchTreeImple.py): Keep nodes within a range - $O(n)$
 - [Tree Representations](Trees/): [Nodes & References](Trees/TreeRepresentationWithNodesReferences.py) & [List of Lists](Trees/buildTreeTest.py)
 
 ---
@@ -144,31 +145,31 @@ Algorithms for arranging elements in order.
 - [Bubble Sort](Sorting/BubbleSortImple.py) - $O(n^2)$
 - [Selection Sort](Sorting/SelectionSortImple.py) - $O(n^2)$
 - [Insertion Sort](Sorting/InsertionSortImple.py) - $O(n^2)$
-- [Shell Sort](Sorting/ShellSortImple.py) - $O(n \log n)$
+- [Shell Sort](Sorting/ShellSortImple.py) - $O(n^2)$ worst-case
 - [Merge Sort](Sorting/MergeSortImple.py) - $O(n \log n)$
 - [Quick Sort](Sorting/QuickSortImple.py) - $O(n \log n)$ average
 
 ### Recursion & Dynamic Programming 🔀
 Solving problems by breaking them into smaller sub-problems.
-- [Fibonacci Sequence](Recursion/): [Iterative](Recursion/FibonacciSeqIterative.py), [Recursive](Recursion/FibonacciSeqRecursion.py), & [Dynamic Programming](Recursion/FibonacciSeqDynamic.py)
-- [Coin Change Problem](Recursion/): [Recursive](Recursion/CoinChangeProblemRecursion.py) & [Dynamic Programming](Recursion/CoinChangeProblemDynamic.py)
-- [String Operations](Recursion/): [Reverse](Recursion/RecursionReverseStr.py) & [Permutations](Recursion/RecursionStrPermutation.py)
-- [Math Operations](Recursion/): [Cumulative Sum](Recursion/RecursionCumulativeSum.py) & [Sum of Digits](Recursion/RecursionSumOfDigits.py)
-- [Word Split](Recursion/RecursionWordSplit.py): Dynamic Programming solution
+- [Fibonacci Sequence](Recursion/): [Iterative](Recursion/FibonacciSeqIterative.py) ($O(n)$), [Recursive](Recursion/FibonacciSeqRecursion.py) ($O(2^n)$), & [Dynamic Programming](Recursion/FibonacciSeqDynamic.py) ($O(n)$)
+- [Coin Change Problem](Recursion/): [Recursive](Recursion/CoinChangeProblemRecursion.py) & [Dynamic Programming](Recursion/CoinChangeProblemDynamic.py) ($O(n \cdot m)$ where $m$ is number of coins)
+- [String Operations](Recursion/): [Reverse](Recursion/RecursionReverseStr.py) ($O(n)$) & [Permutations](Recursion/RecursionStrPermutation.py) ($O(n!)$)
+- [Math Operations](Recursion/): [Cumulative Sum](Recursion/RecursionCumulativeSum.py) ($O(n)$) & [Sum of Digits](Recursion/RecursionSumOfDigits.py) ($O(\log n)$)
+- [Word Split](Recursion/RecursionWordSplit.py): Dynamic Programming solution - $O(n^2)$
 
 ### Graph Algorithms 🗺️
 Algorithms for graph traversal and pathfinding.
-- [Adjacency List](GraphAlgorithms/AdjacencyListGraphImple.py): Graph ADT implementation
-- [Breadth First Search (BFS)](GraphAlgorithms/BFS.py): Word Ladder problem
-- [Depth First Search (DFS)](GraphAlgorithms/DFSGeneral.py): General DFS implementation
-- [Knight's Tour Problem](GraphAlgorithms/): [Graph Generation](GraphAlgorithms/TheKnightsTourProblem.py) & [DFS Solution](GraphAlgorithms/DFSImpleTheKnightsTourProblem.py)
-- [Word Ladder Problem](GraphAlgorithms/WordLadderProblem.py): Building the word ladder graph
+- [Adjacency List](GraphAlgorithms/AdjacencyListGraphImple.py): Graph ADT implementation - $O(V+E)$ space
+- [Breadth First Search (BFS)](GraphAlgorithms/BFS.py): Word Ladder problem - $O(V+E)$
+- [Depth First Search (DFS)](GraphAlgorithms/DFSGeneral.py): General DFS implementation - $O(V+E)$
+- [Knight's Tour Problem](GraphAlgorithms/): [Graph Generation](GraphAlgorithms/TheKnightsTourProblem.py) & [DFS Solution](GraphAlgorithms/DFSImpleTheKnightsTourProblem.py) - $O(k^N)$ where $k$ is branching factor
+- [Word Ladder Problem](GraphAlgorithms/WordLadderProblem.py): Building the word ladder graph - $O(n \cdot m^2)$ where $n$ is number of words and $m$ is word length
 
 ---
 
-## ⚠️ Error Handling & Debugging
+## ⚠️ Error Handling
 
-- [Error and Exceptions](Error-debug/ErrorExceptions.py): Demonstrates `try`, `except`, `else`, and `finally` blocks for robust error handling.
+- [Error and Exceptions](ErrorHandling/ErrorExceptions.py): Demonstrates `try`, `except`, `else`, and `finally` blocks for robust error handling.
 
 ---
 
