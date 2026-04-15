@@ -1,21 +1,16 @@
-# Recursion
+# Recursion and Dynamic Programming
 
-This directory contains Python implementations of problems solved using recursion and dynamic programming.
+This directory contains Python implementations of recursive problems and dynamic programming solutions.
 
 ## Contents
 
-### Fibonacci Sequence
-- [Fibonacci (Iterative)](FibonacciSeqIterative.py): Iterative implementation of the Fibonacci sequence.
-- [Fibonacci (Recursive)](FibonacciSeqRecursion.py): Simple recursive implementation of the Fibonacci sequence.
-- [Fibonacci (Dynamic Programming)](FibonacciSeqDynamic.py): Optimized Fibonacci sequence using memoization.
-
-### Coin Change Problem
-- [Coin Change (Recursive)](CoinChangeProblemRecursion.py): Basic recursive solution to find the minimum number of coins for change.
-- [Coin Change (Dynamic Programming)](CoinChangeProblemDynamic.py): Optimized solution to the coin change problem using dynamic programming.
-
-### Other Recursive Problems
-- [Cumulative Sum](RecursionCumulativeSum.py): Computes the cumulative sum from 0 to $n$ recursively.
-- [Reverse a String](RecursionReverseStr.py): Reverses a string using recursive calls.
-- [String Permutations](RecursionStrPermutation.py): Generates all possible permutations of a given string.
-- [Sum of Digits](RecursionSumOfDigits.py): Calculates the sum of all individual digits in an integer recursively.
-- [Word Split](RecursionWordSplit.py): Determines if a string can be split into words from a given list.
+- [Fibonacci Sequence (Iterative)](FibonacciSeqIterative.py): $O(n)$ time, $O(1)$ space.
+- [Fibonacci Sequence (Recursive)](FibonacciSeqRecursion.py): $O(2^n)$ time (without memoization).
+- [Fibonacci Sequence (Dynamic Programming)](FibonacciSeqDynamic.py): $O(n)$ time and $O(n)$ space with memoization.
+- [Coin Change Problem (Recursive)](CoinChangeProblemRecursion.py): Recursive solution without memoization.
+- [Coin Change Problem (Dynamic Programming)](CoinChangeProblemDynamic.py): $O(n \times m)$ where $n$ is target and $m$ is number of coins.
+- [Recursion Reverse String](RecursionReverseStr.py): Recursive approach to reversing a string. $O(n)$.
+- [Recursion String Permutation](RecursionStrPermutation.py): Generates all permutations of a string. $O(n!)$.
+- [Recursion Cumulative Sum](RecursionCumulativeSum.py): Calculates sum from 0 to $n$. $O(n)$.
+- [Recursion Sum of Digits](RecursionSumOfDigits.py): Calculates sum of digits in a number. $O(\log_{10} n)$.
+- [Recursion Word Split](RecursionWordSplit.py): Dynamic programming solution for word breaking.

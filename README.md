@@ -48,7 +48,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
   - [Sorting](#sorting)
   - [Recursion & Dynamic Programming](#recursion--dynamic-programming)
   - [Graph Algorithms](#graph-algorithms)
-- [Error Handling & Debugging](#error-handling--debugging)
+- [Error Handling](#error-handling)
 - [Usage](#usage)
 - [Quick Reference](#quick-reference)
 - [License](#license)
@@ -80,7 +80,8 @@ python3 Sorting/BubbleSortImple.py
 ```
 .
 ├── Arrays/              # 🔤 Array-based problems and algorithms
-├── Error-debug/         # ⚠️ Error handling and debugging examples
+├── Deque/               # 🔄 Double-ended queue
+├── ErrorHandling/       # ⚠️ Error handling and debugging examples
 ├── GraphAlgorithms/     # 🗺️ Graph traversal (BFS, DFS) and pathfinding
 ├── LinkedLists/         # 🔗 Singly and Doubly Linked Lists
 ├── Queues/              # 📦 Queue implementations (FIFO)
@@ -88,7 +89,6 @@ python3 Sorting/BubbleSortImple.py
 ├── Sorting/             # 📊 Common sorting algorithms
 ├── Stacks/              # 📚 Stack implementations and applications
 ├── Trees/               # 🌳 Binary Trees, BSTs, Heaps, and Traversals
-├── deque/               # 🔄 Double-ended queue
 ├── CONTRIBUTING.md      # 🤝 Contribution guidelines
 ├── LICENSE              # 📄 MIT License
 └── README.md            # 📖 This file
@@ -123,7 +123,7 @@ FIFO (First-In-First-Out) data structures.
 
 ### Deque 🔄
 Double-ended queue operations.
-- [Deque Implementation](deque/DequeImple.py): Operations at both ends
+- [Deque Implementation](Deque/DequeImple.py): Operations at both ends
 
 ### Trees 🌳
 Hierarchical data structures.
@@ -166,9 +166,9 @@ Algorithms for graph traversal and pathfinding.
 
 ---
 
-## ⚠️ Error Handling & Debugging
+## ⚠️ Error Handling
 
-- [Error and Exceptions](Error-debug/ErrorExceptions.py): Demonstrates `try`, `except`, `else`, and `finally` blocks for robust error handling.
+- [Error and Exceptions](ErrorHandling/ErrorExceptions.py): Demonstrates `try`, `except`, `else`, and `finally` blocks for robust error handling.
 
 ---
 
@@ -215,7 +215,7 @@ New to DSA? Follow this recommended order:
 ## 🔮 Roadmap
 
 - [ ] Add more graph algorithms (Dijkstra, Bellman-Ford)
-- [ ] Include complexity analysis for each solution
+- [x] Include complexity analysis for each solution
 - [ ] Add interactive examples/visualizations
 - [ ] Create a difficulty level classification
 - [ ] Add more test cases
