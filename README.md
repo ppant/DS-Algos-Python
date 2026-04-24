@@ -38,16 +38,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Data Structures](#data-structures)
-  - [Arrays](#arrays)
-  - [Linked Lists](#linked-lists)
-  - [Stacks](#stacks)
-  - [Queues](#queues)
-  - [Deque](#deque)
-  - [Trees](#trees)
+  - [Arrays](#arrays-)
+  - [Linked Lists](#linked-lists-)
+  - [Stacks](#stacks-)
+  - [Queues](#queues-)
+  - [Deque](#deque-)
+  - [Trees](#trees-)
 - [Algorithms](#algorithms)
-  - [Sorting](#sorting)
-  - [Recursion & Dynamic Programming](#recursion--dynamic-programming)
-  - [Graph Algorithms](#graph-algorithms)
+  - [Sorting](#sorting-)
+  - [Recursion & Dynamic Programming](#recursion--dynamic-programming-)
+  - [Graph Algorithms](#graph-algorithms-)
 - [Error Handling & Debugging](#error-handling--debugging)
 - [Usage](#usage)
 - [Quick Reference](#quick-reference)
@@ -80,7 +80,8 @@ python3 Sorting/BubbleSortImple.py
 ```
 .
 ├── Arrays/              # 🔤 Array-based problems and algorithms
-├── Error-debug/         # ⚠️ Error handling and debugging examples
+├── Deque/               # 🔄 Double-ended queue
+├── ErrorHandling/       # ⚠️ Error handling and debugging examples
 ├── GraphAlgorithms/     # 🗺️ Graph traversal (BFS, DFS) and pathfinding
 ├── LinkedLists/         # 🔗 Singly and Doubly Linked Lists
 ├── Queues/              # 📦 Queue implementations (FIFO)
@@ -88,7 +89,6 @@ python3 Sorting/BubbleSortImple.py
 ├── Sorting/             # 📊 Common sorting algorithms
 ├── Stacks/              # 📚 Stack implementations and applications
 ├── Trees/               # 🌳 Binary Trees, BSTs, Heaps, and Traversals
-├── deque/               # 🔄 Double-ended queue
 ├── CONTRIBUTING.md      # 🤝 Contribution guidelines
 ├── LICENSE              # 📄 MIT License
 └── README.md            # 📖 This file
@@ -100,39 +100,39 @@ python3 Sorting/BubbleSortImple.py
 
 ### Arrays 🔤
 Common array-based algorithms and manipulations.
-- [Anagram Check](Arrays/): [Sorted](Arrays/Anagram_Check_Sorted_Sol.py) & [Manual](Arrays/Anagram_Check_manual_Sol.py) solutions
-- [Array Pair Sum](Arrays/ArrayPairSumSol.py): Find pairs that sum to $k$
-- [Find Missing Element](Arrays/): [XOR](Arrays/ArrayFindTheMissingElement_XOR_sol.py), [Brute Force](Arrays/ArrayFindTheMissingElement_brute_force_sol.py), [Hash Table](Arrays/ArrayFindTheMissingElement_hash_table_sol.py), & [Sum](Arrays/ArrayFindTheMissingElement_takingSumandSubtract_sol.py) approaches
+- [Anagram Check](Arrays/): [Sorted](Arrays/Anagram_Check_Sorted_Sol.py) & [Manual](Arrays/Anagram_Check_manual_Sol.py) solutions - $O(n \log n)$ or $O(n)$
+- [Array Pair Sum](Arrays/ArrayPairSumSol.py): Find pairs that sum to $k$ - $O(n)$
+- [Find Missing Element](Arrays/): [XOR](Arrays/ArrayFindTheMissingElement_XOR_sol.py), [Brute Force](Arrays/ArrayFindTheMissingElement_brute_force_sol.py), [Hash Table](Arrays/ArrayFindTheMissingElement_hash_table_sol.py), & [Sum](Arrays/ArrayFindTheMissingElement_takingSumandSubtract_sol.py) approaches - $O(n)$ to $O(n \log n)$
 
 ### Linked Lists 🔗
 Implementations and problems involving linked structures.
-- [Singly Linked List](LinkedLists/SingleLinkedListImple.py) & [Doubly Linked List](LinkedLists/DoublyLinkedListImple.py)
-- [Cycle Detection](LinkedLists/SinglyLinkedListCycleCheckImple.py): Detect cycles using two pointers (Floyd's algorithm)
-- [Reverse Linked List](LinkedLists/LinkedListReversal.py): In-place reversal
-- [Nth to Last Node](LinkedLists/LinkedListNthToLastNode.py): Find the $n$-th node from the end
+- [Singly Linked List](LinkedLists/SingleLinkedListImple.py) & [Doubly Linked List](LinkedLists/DoublyLinkedListImple.py) - $O(1)$ for basic operations
+- [Cycle Detection](LinkedLists/SinglyLinkedListCycleCheckImple.py): Detect cycles using two pointers (Floyd's algorithm) - $O(n)$
+- [Reverse Linked List](LinkedLists/LinkedListReversal.py): In-place reversal - $O(n)$
+- [Nth to Last Node](LinkedLists/LinkedListNthToLastNode.py): Find the $n$-th node from the end - $O(n)$
 
 ### Stacks 📚
 LIFO (Last-In-First-Out) data structures.
-- [Stack Implementation](Stacks/StackImple.py): Basic operations (push, pop, peek)
-- [Balanced Parentheses](Stacks/BalanceParenthlessCheckImple.py): Check for balanced brackets using a stack
+- [Stack Implementation](Stacks/StackImple.py): Basic operations (push, pop, peek) - $O(1)$
+- [Balanced Parentheses](Stacks/BalanceParenthlessCheckImple.py): Check for balanced brackets using a stack - $O(n)$
 
 ### Queues 📦
 FIFO (First-In-First-Out) data structures.
-- [Queue Implementation](Queues/QueueImple.py): Basic operations (enqueue, dequeue)
-- [Queue with Two Stacks](Queues/QueueWith2StacksImple.py): Implementing FIFO using LIFO structures
+- [Queue Implementation](Queues/QueueImple.py): Basic operations (enqueue, dequeue) - $O(1)$ or $O(n)$ depending on implementation
+- [Queue with Two Stacks](Queues/QueueWith2StacksImple.py): Implementing FIFO using LIFO structures - $O(1)$ amortized
 
 ### Deque 🔄
 Double-ended queue operations.
-- [Deque Implementation](deque/DequeImple.py): Operations at both ends
+- [Deque Implementation](Deque/DequeImple.py): Operations at both ends - $O(1)$ or $O(n)$ depending on implementation
 
 ### Trees 🌳
 Hierarchical data structures.
-- [Binary Search Tree](Trees/BinarySearchTreesImple.py): Complete BST implementation
-- [BST Validation](Trees/): [Solution 1 (In-order)](Trees/BinarySearchTreeCheckImpleSol1.py) & [Solution 2 (Range check)](Trees/BinarySearchTreeCheckImpleSol2.py)
-- [Binary Search](Trees/): [Iterative](Trees/BinarySearchImple.py) & [Recursive](Trees/BinarySearchRecursiveImple.py)
-- [Binary Heap](Trees/BinaryHeapImple.py): Min-heap implementation
-- [Tree Traversals](Trees/TreeLevelOrderPrintImple.py): Level order (BFS) printing
-- [Trim BST](Trees/TrimBinarySearchTreeImple.py): Keep nodes within a range
+- [Binary Search Tree](Trees/BinarySearchTreesImple.py): Complete BST implementation - $O(\log n)$ average
+- [BST Validation](Trees/): [Solution 1 (In-order)](Trees/BinarySearchTreeCheckImpleSol1.py) & [Solution 2 (Range check)](Trees/BinarySearchTreeCheckImpleSol2.py) - $O(n)$
+- [Binary Search](Trees/): [Iterative](Trees/BinarySearchImple.py) & [Recursive](Trees/BinarySearchRecursiveImple.py) - $O(\log n)$
+- [Binary Heap](Trees/BinaryHeapImple.py): Min-heap implementation - $O(\log n)$
+- [Tree Traversals](Trees/TreeLevelOrderPrintImple.py): Level order (BFS) printing - $O(n)$
+- [Trim BST](Trees/TrimBinarySearchTreeImple.py): Keep nodes within a range - $O(n)$
 - [Tree Representations](Trees/): [Nodes & References](Trees/TreeRepresentationWithNodesReferences.py) & [List of Lists](Trees/buildTreeTest.py)
 
 ---
@@ -168,7 +168,7 @@ Algorithms for graph traversal and pathfinding.
 
 ## ⚠️ Error Handling & Debugging
 
-- [Error and Exceptions](Error-debug/ErrorExceptions.py): Demonstrates `try`, `except`, `else`, and `finally` blocks for robust error handling.
+- [Error and Exceptions](ErrorHandling/ErrorExceptions.py): Demonstrates `try`, `except`, `else`, and `finally` blocks for robust error handling.
 
 ---
 
