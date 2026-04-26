@@ -19,5 +19,5 @@ This directory contains Python implementations of various tree-based data struct
 
 ### Tree Representations & Traversals
 - [Nodes and References Representation](TreeRepresentationWithNodesReferences.py): A simple implementation of a binary tree using a class-based nodes and references approach.
-- [List of Lists Representation](buildTreeTest.py): Demonstrates building and manipulating a tree using a "list of lists" approach.
+- [List of Lists Representation](BuildTreeTest.py): Demonstrates building and manipulating a tree using a "list of lists" approach.
 - [Tree Level Order Print](TreeLevelOrderPrintImple.py): Prints a binary tree in level order (breadth-first) using a queue, with each level on a new line.
