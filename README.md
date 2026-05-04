@@ -38,16 +38,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Data Structures](#data-structures)
-  - [Arrays](#arrays)
-  - [Linked Lists](#linked-lists)
-  - [Stacks](#stacks)
-  - [Queues](#queues)
-  - [Deque](#deque)
-  - [Trees](#trees)
+  - [Arrays](#arrays-)
+  - [Linked Lists](#linked-lists-)
+  - [Stacks](#stacks-)
+  - [Queues](#queues-)
+  - [Deque](#deque-)
+  - [Trees](#trees-)
 - [Algorithms](#algorithms)
-  - [Sorting](#sorting)
-  - [Recursion & Dynamic Programming](#recursion--dynamic-programming)
-  - [Graph Algorithms](#graph-algorithms)
+  - [Sorting](#sorting-)
+  - [Recursion & Dynamic Programming](#recursion--dynamic-programming-)
+  - [Graph Algorithms](#graph-algorithms-)
 - [Error Handling & Debugging](#error-handling--debugging)
 - [Usage](#usage)
 - [Quick Reference](#quick-reference)
@@ -80,7 +80,7 @@ python3 Sorting/BubbleSortImple.py
 ```
 .
 ├── Arrays/              # 🔤 Array-based problems and algorithms
-├── Error-debug/         # ⚠️ Error handling and debugging examples
+├── ErrorHandling/       # ⚠️ Error handling and debugging examples
 ├── GraphAlgorithms/     # 🗺️ Graph traversal (BFS, DFS) and pathfinding
 ├── LinkedLists/         # 🔗 Singly and Doubly Linked Lists
 ├── Queues/              # 📦 Queue implementations (FIFO)
@@ -88,7 +88,7 @@ python3 Sorting/BubbleSortImple.py
 ├── Sorting/             # 📊 Common sorting algorithms
 ├── Stacks/              # 📚 Stack implementations and applications
 ├── Trees/               # 🌳 Binary Trees, BSTs, Heaps, and Traversals
-├── deque/               # 🔄 Double-ended queue
+├── Deque/               # 🔄 Double-ended queue
 ├── CONTRIBUTING.md      # 🤝 Contribution guidelines
 ├── LICENSE              # 📄 MIT License
 └── README.md            # 📖 This file
@@ -100,9 +100,9 @@ python3 Sorting/BubbleSortImple.py
 
 ### Arrays 🔤
 Common array-based algorithms and manipulations.
-- [Anagram Check](Arrays/): [Sorted](Arrays/Anagram_Check_Sorted_Sol.py) & [Manual](Arrays/Anagram_Check_manual_Sol.py) solutions
-- [Array Pair Sum](Arrays/ArrayPairSumSol.py): Find pairs that sum to $k$
-- [Find Missing Element](Arrays/): [XOR](Arrays/ArrayFindTheMissingElement_XOR_sol.py), [Brute Force](Arrays/ArrayFindTheMissingElement_brute_force_sol.py), [Hash Table](Arrays/ArrayFindTheMissingElement_hash_table_sol.py), & [Sum](Arrays/ArrayFindTheMissingElement_takingSumandSubtract_sol.py) approaches
+- [Anagram Check](Arrays/): [Sorted](Arrays/Anagram_Check_Sorted_Sol.py) ($O(n \log n)$) & [Manual](Arrays/Anagram_Check_manual_Sol.py) ($O(n)$) solutions
+- [Array Pair Sum](Arrays/ArrayPairSumSol.py): Find pairs that sum to $k$ ($O(n)$)
+- [Find Missing Element](Arrays/): [XOR](Arrays/ArrayFindTheMissingElement_XOR_sol.py) ($O(n)$), [Brute Force](Arrays/ArrayFindTheMissingElement_brute_force_sol.py) ($O(n \log n)$), [Hash Table](Arrays/ArrayFindTheMissingElement_hash_table_sol.py) ($O(n)$), & [Sum](Arrays/ArrayFindTheMissingElement_takingSumandSubtract_sol.py) ($O(n)$) approaches
 
 ### Linked Lists 🔗
 Implementations and problems involving linked structures.
@@ -123,7 +123,7 @@ FIFO (First-In-First-Out) data structures.
 
 ### Deque 🔄
 Double-ended queue operations.
-- [Deque Implementation](deque/DequeImple.py): Operations at both ends
+- [Deque Implementation](Deque/DequeImple.py): Operations at both ends ($O(1)$ front, $O(n)$ rear)
 
 ### Trees 🌳
 Hierarchical data structures.
@@ -144,7 +144,7 @@ Algorithms for arranging elements in order.
 - [Bubble Sort](Sorting/BubbleSortImple.py) - $O(n^2)$
 - [Selection Sort](Sorting/SelectionSortImple.py) - $O(n^2)$
 - [Insertion Sort](Sorting/InsertionSortImple.py) - $O(n^2)$
-- [Shell Sort](Sorting/ShellSortImple.py) - $O(n \log n)$
+- [Shell Sort](Sorting/ShellSortImple.py) - $O(n^2)$ worst-case
 - [Merge Sort](Sorting/MergeSortImple.py) - $O(n \log n)$
 - [Quick Sort](Sorting/QuickSortImple.py) - $O(n \log n)$ average
 
@@ -168,7 +168,7 @@ Algorithms for graph traversal and pathfinding.
 
 ## ⚠️ Error Handling & Debugging
 
-- [Error and Exceptions](Error-debug/ErrorExceptions.py): Demonstrates `try`, `except`, `else`, and `finally` blocks for robust error handling.
+- [Error and Exceptions](ErrorHandling/ErrorExceptions.py): Demonstrates `try`, `except`, `else`, and `finally` blocks for robust error handling.
 
 ---
 
