@@ -1,21 +1,16 @@
-# Recursion
+# Recursion and Dynamic Programming
 
-This directory contains Python implementations of problems solved using recursion and dynamic programming.
+This directory contains recursive and dynamic programming solutions to various problems.
 
 ## Contents
 
-### Fibonacci Sequence
-- [Fibonacci (Iterative)](FibonacciSeqIterative.py): Iterative implementation of the Fibonacci sequence.
-- [Fibonacci (Recursive)](FibonacciSeqRecursion.py): Simple recursive implementation of the Fibonacci sequence.
-- [Fibonacci (Dynamic Programming)](FibonacciSeqDynamic.py): Optimized Fibonacci sequence using memoization.
-
-### Coin Change Problem
-- [Coin Change (Recursive)](CoinChangeProblemRecursion.py): Basic recursive solution to find the minimum number of coins for change.
-- [Coin Change (Dynamic Programming)](CoinChangeProblemDynamic.py): Optimized solution to the coin change problem using dynamic programming.
-
-### Other Recursive Problems
-- [Cumulative Sum](RecursionCumulativeSum.py): Computes the cumulative sum from 0 to $n$ recursively.
-- [Reverse a String](RecursionReverseStr.py): Reverses a string using recursive calls.
-- [String Permutations](RecursionStrPermutation.py): Generates all possible permutations of a given string.
-- [Sum of Digits](RecursionSumOfDigits.py): Calculates the sum of all individual digits in an integer recursively.
-- [Word Split](RecursionWordSplit.py): Determines if a string can be split into words from a given list.
+- [Fibonacci Sequence (Iterative)](FibonacciSeqIterative.py): Iterative implementation of Fibonacci. Complexity: $O(n)$
+- [Fibonacci Sequence (Recursive)](FibonacciSeqRecursion.py): Simple recursive implementation. Complexity: $O(2^n)$
+- [Fibonacci Sequence (Dynamic Programming)](FibonacciSeqDynamic.py): Optimized Fibonacci using memoization. Complexity: $O(n)$
+- [Coin Change Problem (Recursive)](CoinChangeProblemRecursion.py): Recursive solution to find the minimum number of coins. Complexity: Exponential.
+- [Coin Change Problem (Dynamic Programming)](CoinChangeProblemDynamic.py): Optimized coin change solution using DP. Complexity: $O(n \cdot m)$ where $n$ is the target amount and $m$ is the number of coin denominations.
+- [Recursion String Permutation](RecursionStrPermutation.py): Generates all permutations of a string. Complexity: $O(n!)$
+- [Recursion Reverse String](RecursionReverseStr.py): Reverses a string using recursion. Complexity: $O(n)$
+- [Recursion Cumulative Sum](RecursionCumulativeSum.py): Calculates the cumulative sum of numbers up to $n$. Complexity: $O(n)$
+- [Recursion Sum of Digits](RecursionSumOfDigits.py): Calculates the sum of digits of an integer. Complexity: $O(n)$
+- [Recursion Word Split](RecursionWordSplit.py): Determines if a string can be split into words from a given list. Complexity: $O(n^2)$

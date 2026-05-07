@@ -1,23 +1,16 @@
 # Trees
 
-This directory contains Python implementations of various tree-based data structures and algorithms.
+This directory contains implementations of trees, binary search trees, and related algorithms.
 
 ## Contents
 
-### Binary Search Trees (BST)
-- [Binary Search Tree Implementation](BinarySearchTreesImple.py): A comprehensive implementation of a BST with `TreeNode` and `BinarySearchTree` classes, including insertion, deletion, and search.
-- [Validate BST (Solution 1)](BinarySearchTreeCheckImpleSol1.py): Validates a BST by performing an in-order traversal and checking if the resulting values are sorted.
-- [Validate BST (Solution 2)](BinarySearchTreeCheckImpleSol2.py): Validates a BST by keeping track of the minimum and maximum allowable values for each node.
-- [Trim a BST](TrimBinarySearchTreeImple.py): Trims a BST so that all node values fall within a specified range $[min, max]$.
-
-### Search Algorithms
-- [Binary Search (Iterative)](BinarySearchImple.py): Iterative implementation of the binary search algorithm on a sorted list.
-- [Binary Search (Recursive)](BinarySearchRecursiveImple.py): Recursive implementation of the binary search algorithm.
-
-### Heaps
-- [Binary Heap Implementation](BinaryHeapImple.py): Implements a min-heap using a recursive approach, including `insert`, `delMin`, and `buildHeap`.
-
-### Tree Representations & Traversals
-- [Nodes and References Representation](TreeRepresentationWithNodesReferences.py): A simple implementation of a binary tree using a class-based nodes and references approach.
-- [List of Lists Representation](buildTreeTest.py): Demonstrates building and manipulating a tree using a "list of lists" approach.
-- [Tree Level Order Print](TreeLevelOrderPrintImple.py): Prints a binary tree in level order (breadth-first) using a queue, with each level on a new line.
+- [Binary Search Tree Implementation](BinarySearchTreesImple.py): Complete implementation of a BST. Complexity: $O(\log n)$ average, $O(n)$ worst-case.
+- [Binary Search Tree Check (Solution 1)](BinarySearchTreeCheckImpleSol1.py): Validates a BST using in-order traversal. Complexity: $O(n)$
+- [Binary Search Tree Check (Solution 2)](BinarySearchTreeCheckImpleSol2.py): Validates a BST by checking value ranges. Complexity: $O(n)$
+- [Binary Search (Iterative)](BinarySearchImple.py): Searches for an item in a sorted list iteratively. Complexity: $O(\log n)$
+- [Binary Search (Recursive)](BinarySearchRecursiveImple.py): Searches for an item in a sorted list recursively. Complexity: $O(\log n)$
+- [Binary Heap Implementation](BinaryHeapImple.py): Implementation of a min-heap. Complexity: $O(\log n)$ for insert/extract.
+- [Tree Level Order Print](TreeLevelOrderPrintImple.py): Prints tree nodes level by level (BFS). Complexity: $O(n)$
+- [Trim a Binary Search Tree](TrimBinarySearchTreeImple.py): Removes nodes outside a given range. Complexity: $O(n)$
+- [Tree Representation (Nodes & References)](TreeRepresentationWithNodesReferences.py): Basic tree structure using node objects.
+- [Tree Representation (List of Lists)](BuildTreeTest.py): Tree structure implemented using nested lists.
