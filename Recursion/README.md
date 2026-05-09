@@ -5,9 +5,9 @@ This directory contains Python implementations of problems solved using recursio
 ## Contents
 
 ### Fibonacci Sequence
-- [Fibonacci (Iterative)](FibonacciSeqIterative.py): Iterative implementation of the Fibonacci sequence.
-- [Fibonacci (Recursive)](FibonacciSeqRecursion.py): Simple recursive implementation of the Fibonacci sequence.
-- [Fibonacci (Dynamic Programming)](FibonacciSeqDynamic.py): Optimized Fibonacci sequence using memoization.
+- [Fibonacci (Iterative)](FibonacciSeqIterative.py): Iterative implementation of the Fibonacci sequence ($O(n)$).
+- [Fibonacci (Recursive)](FibonacciSeqRecursion.py): Simple recursive implementation of the Fibonacci sequence ($O(2^n)$).
+- [Fibonacci (Dynamic Programming)](FibonacciSeqDynamic.py): Optimized Fibonacci sequence using memoization ($O(n)$).
 
 ### Coin Change Problem
 - [Coin Change (Recursive)](CoinChangeProblemRecursion.py): Basic recursive solution to find the minimum number of coins for change.
@@ -18,4 +18,4 @@ This directory contains Python implementations of problems solved using recursio
 - [Reverse a String](RecursionReverseStr.py): Reverses a string using recursive calls.
 - [String Permutations](RecursionStrPermutation.py): Generates all possible permutations of a given string.
 - [Sum of Digits](RecursionSumOfDigits.py): Calculates the sum of all individual digits in an integer recursively.
-- [Word Split](RecursionWordSplit.py): Determines if a string can be split into words from a given list.
+- [Word Split](RecursionWordSplit.py): Determines if a string can be split into words from a given list using dynamic programming.
