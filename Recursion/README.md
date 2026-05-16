@@ -1,21 +1,16 @@
-# Recursion
+# Recursion and Dynamic Programming
 
 This directory contains Python implementations of problems solved using recursion and dynamic programming.
 
 ## Contents
 
-### Fibonacci Sequence
-- [Fibonacci (Iterative)](FibonacciSeqIterative.py): Iterative implementation of the Fibonacci sequence.
-- [Fibonacci (Recursive)](FibonacciSeqRecursion.py): Simple recursive implementation of the Fibonacci sequence.
-- [Fibonacci (Dynamic Programming)](FibonacciSeqDynamic.py): Optimized Fibonacci sequence using memoization.
-
-### Coin Change Problem
-- [Coin Change (Recursive)](CoinChangeProblemRecursion.py): Basic recursive solution to find the minimum number of coins for change.
-- [Coin Change (Dynamic Programming)](CoinChangeProblemDynamic.py): Optimized solution to the coin change problem using dynamic programming.
-
-### Other Recursive Problems
-- [Cumulative Sum](RecursionCumulativeSum.py): Computes the cumulative sum from 0 to $n$ recursively.
-- [Reverse a String](RecursionReverseStr.py): Reverses a string using recursive calls.
-- [String Permutations](RecursionStrPermutation.py): Generates all possible permutations of a given string.
-- [Sum of Digits](RecursionSumOfDigits.py): Calculates the sum of all individual digits in an integer recursively.
-- [Word Split](RecursionWordSplit.py): Determines if a string can be split into words from a given list.
+- [Fibonacci Sequence (Iterative)](FibonacciSeqIterative.py): Iterative implementation of the Fibonacci sequence.
+- [Fibonacci Sequence (Recursive)](FibonacciSeqRecursion.py): Recursive implementation of the Fibonacci sequence.
+- [Fibonacci Sequence (Dynamic Programming)](FibonacciSeqDynamic.py): Optimized Fibonacci sequence using memoization.
+- [Coin Change Problem (Recursive)](CoinChangeProblemRecursion.py): Recursive solution for the coin change problem.
+- [Coin Change Problem (Dynamic Programming)](CoinChangeProblemDynamic.py): Optimized dynamic programming solution for the coin change problem.
+- [Recursion Reverse String](RecursionReverseStr.py): Reversing a string using recursion.
+- [Recursion String Permutation](RecursionStrPermutation.py): Generating all permutations of a string.
+- [Recursion Cumulative Sum](RecursionCumulativeSum.py): Calculating the cumulative sum using recursion.
+- [Recursion Sum of Digits](RecursionSumOfDigits.py): Calculating the sum of digits of a number using recursion.
+- [Recursion Word Split](RecursionWordSplit.py): Splitting a string into words based on a dictionary using recursion and dynamic programming.
